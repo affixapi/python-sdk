@@ -31,7 +31,6 @@ jobs:
 
       - name: prepare python-sdk
         run: |
-          sed -i 's/ = "openapi-client"/= "affixapi"/g' setup.py                          # for some reason the generator uses "openapi-client" as the package name
           python3 -m pip install --upgrade build
           python3 -m build
 
