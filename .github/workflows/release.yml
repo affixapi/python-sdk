@@ -12,13 +12,27 @@ defaults:
 permissions:
   contents: write
   issues: write
+  id-token: write
 
 jobs:
   publish:
     runs-on: ubuntu-latest
     timeout-minutes: 2
+    environment:
+      name: pypi
+      url: https://pypi.org/p/affixapi
+
     steps:
       - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version-file: '.python-version'
+
+      - name: prepare python-sdk
+        run: |
+          python3 -m pip install --upgrade build
+          python3 -m build
 
       - uses: cycjimmy/semantic-release-action@v4.0.0
         with:
@@ -27,3 +41,6 @@ jobs:
             @semantic-release/changelog@6.0.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Publish package distributions to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
