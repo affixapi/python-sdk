@@ -77,13 +77,17 @@ class ProviderResponse(ModelSimple):
             'EMPLOYMENT_HERO': "employment hero",
             'FACTORIALHR': "factorialhr",
             'FOURTHHR': "fourthhr",
+            'GUSTO': "gusto",
             'ITRENT': "itrent",
+            'JUSTWORKS': "justworks",
             'OYSTERHR': "oysterhr",
             'PAYCIRCLE': "paycircle",
             'PENTO.IO': "pento.io",
             'PEOPLEHR': "peoplehr",
             'REMOTE.COM': "remote.com",
+            'RIPPLING': "rippling",
             'SAGEONE': "sageone",
+            'SHAPE_PAYROLL': "shape payroll",
             'SIMPLEPAY.IE': "simplepay.ie",
         },
     }
@@ -134,10 +138,10 @@ class ProviderResponse(ModelSimple):
         Note that value can be passed either in args or in kwargs, but not in both.
 
         Args:
-            args[0] (str):, must be one of ["sandbox", "bamboohr", "breathe", "cezanne", "charliehr", "deel", "deputy", "hailyhr", "hibob", "humaans", "iris cascade", "moorepay", "nmbrs", "parolla.ie", "payfit", "personio.de", "planday", "quickbooks uk", "sagehr", "saplinghr", "staffology", "xero uk", "brain payroll", "brightpay connect", "employment hero", "factorialhr", "fourthhr", "itrent", "oysterhr", "paycircle", "pento.io", "peoplehr", "remote.com", "sageone", "simplepay.ie", ]  # noqa: E501
+            args[0] (str):, must be one of ["sandbox", "bamboohr", "breathe", "cezanne", "charliehr", "deel", "deputy", "hailyhr", "hibob", "humaans", "iris cascade", "moorepay", "nmbrs", "parolla.ie", "payfit", "personio.de", "planday", "quickbooks uk", "sagehr", "saplinghr", "staffology", "xero uk", "brain payroll", "brightpay connect", "employment hero", "factorialhr", "fourthhr", "gusto", "itrent", "justworks", "oysterhr", "paycircle", "pento.io", "peoplehr", "remote.com", "rippling", "sageone", "shape payroll", "simplepay.ie", ]  # noqa: E501
 
         Keyword Args:
-            value (str):, must be one of ["sandbox", "bamboohr", "breathe", "cezanne", "charliehr", "deel", "deputy", "hailyhr", "hibob", "humaans", "iris cascade", "moorepay", "nmbrs", "parolla.ie", "payfit", "personio.de", "planday", "quickbooks uk", "sagehr", "saplinghr", "staffology", "xero uk", "brain payroll", "brightpay connect", "employment hero", "factorialhr", "fourthhr", "itrent", "oysterhr", "paycircle", "pento.io", "peoplehr", "remote.com", "sageone", "simplepay.ie", ]  # noqa: E501
+            value (str):, must be one of ["sandbox", "bamboohr", "breathe", "cezanne", "charliehr", "deel", "deputy", "hailyhr", "hibob", "humaans", "iris cascade", "moorepay", "nmbrs", "parolla.ie", "payfit", "personio.de", "planday", "quickbooks uk", "sagehr", "saplinghr", "staffology", "xero uk", "brain payroll", "brightpay connect", "employment hero", "factorialhr", "fourthhr", "gusto", "itrent", "justworks", "oysterhr", "paycircle", "pento.io", "peoplehr", "remote.com", "rippling", "sageone", "shape payroll", "simplepay.ie", ]  # noqa: E501
             _check_type (bool): if True, values for parameters in openapi_types
                                 will be type checked and a TypeError will be
                                 raised if the wrong type is input.
