@@ -170,6 +170,22 @@ export const computeSignature = ({
 };
 ```
 
+While verifying the Affix API signature header should be your primary
+method of confirming validity, you can also whitelist our outbound webhook
+static IP addresses.
+
+```
+dev:
+  - 52.210.169.82
+  - 52.210.38.77
+  - 3.248.135.204
+
+prod:
+  - 52.51.160.102
+  - 54.220.83.244
+  - 3.254.213.171
+```
+
 ## Rate limits
 Open endpoints (not gated by an API key) (applied at endpoint level):
   - 15 requests every 1 minute (by IP address)
