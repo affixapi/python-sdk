@@ -24,7 +24,7 @@ in order to get started, you must:
     the sign in flow is complete and exchange that `authorization_code` for
     a Bearer token
 
-# Sandbox keys (developer mode)
+# Sandbox keys (xhr mode)
 ### dev
 ```
 eyJhbGciOiJFUzI1NiIsImtpZCI6Ims5RmxwSFR1YklmZWNsUU5QRVZzeFcxazFZZ0Zfbk1BWllOSGVuOFQxdGciLCJ0eXAiOiJKV1MifQ.eyJwcm92aWRlciI6InNhbmRib3giLCJzY29wZXMiOlsiLzIwMjMtMDMtMDEvZGV2ZWxvcGVyL2NvbXBhbnkiLCIvMjAyMy0wMy0wMS9kZXZlbG9wZXIvZW1wbG95ZWUiLCIvMjAyMy0wMy0wMS9kZXZlbG9wZXIvZW1wbG95ZWVzIiwiLzIwMjMtMDMtMDEvZGV2ZWxvcGVyL2lkZW50aXR5IiwiLzIwMjMtMDMtMDEvZGV2ZWxvcGVyL3BheXJ1bnMiLCIvMjAyMy0wMy0wMS9kZXZlbG9wZXIvcGF5cnVucy86cGF5cnVuX2lkIiwiLzIwMjMtMDMtMDEvZGV2ZWxvcGVyL3RpbWUtb2ZmLWJhbGFuY2VzIiwiLzIwMjMtMDMtMDEvZGV2ZWxvcGVyL3RpbWUtb2ZmLWVudHJpZXMiLCIvMjAyMy0wMy0wMS9kZXZlbG9wZXIvdGltZXNoZWV0cyJdLCJ0b2tlbiI6ImQ1OTZhMmYzLWYzNzktNGE1ZC1hMmRhLTk4OWJmYWViYTg1ZCIsImlhdCI6MTcwMjkyMDkwMywiaXNzIjoicHVibGljYXBpLWludGVybWVkaWF0ZS5kZXYuZW5naW5lZXJpbmcuYWZmaXhhcGkuY29tIiwic3ViIjoiZGV2ZWxvcGVyIiwiYXVkIjoiM0ZEQUVERjktMURDQTRGNTQtODc5NDlGNkEtNDEwMjc2NDMifQ.VLWYjCQvBS0C3ZA6_J3-U-idZj5EYI2IlDdTjAWBxSIHGufp6cqaVodKsF2BeIqcIeB3P0lW-KL9mY3xGd7ckQ
@@ -35,7 +35,7 @@ eyJhbGciOiJFUzI1NiIsImtpZCI6Ims5RmxwSFR1YklmZWNsUU5QRVZzeFcxazFZZ0Zfbk1BWllOSGVu
 curl --fail \\
   -X GET \\
   -H 'Authorization: Bearer eyJhbGciOiJFUzI1NiIsImtpZCI6Ims5RmxwSFR1YklmZWNsUU5QRVZzeFcxazFZZ0Zfbk1BWllOSGVuOFQxdGciLCJ0eXAiOiJKV1MifQ.eyJwcm92aWRlciI6InNhbmRib3giLCJzY29wZXMiOlsiLzIwMjMtMDMtMDEvZGV2ZWxvcGVyL2NvbXBhbnkiLCIvMjAyMy0wMy0wMS9kZXZlbG9wZXIvZW1wbG95ZWUiLCIvMjAyMy0wMy0wMS9kZXZlbG9wZXIvZW1wbG95ZWVzIiwiLzIwMjMtMDMtMDEvZGV2ZWxvcGVyL2lkZW50aXR5IiwiLzIwMjMtMDMtMDEvZGV2ZWxvcGVyL3BheXJ1bnMiLCIvMjAyMy0wMy0wMS9kZXZlbG9wZXIvcGF5cnVucy86cGF5cnVuX2lkIiwiLzIwMjMtMDMtMDEvZGV2ZWxvcGVyL3RpbWUtb2ZmLWJhbGFuY2VzIiwiLzIwMjMtMDMtMDEvZGV2ZWxvcGVyL3RpbWUtb2ZmLWVudHJpZXMiLCIvMjAyMy0wMy0wMS9kZXZlbG9wZXIvdGltZXNoZWV0cyJdLCJ0b2tlbiI6ImQ1OTZhMmYzLWYzNzktNGE1ZC1hMmRhLTk4OWJmYWViYTg1ZCIsImlhdCI6MTcwMjkyMDkwMywiaXNzIjoicHVibGljYXBpLWludGVybWVkaWF0ZS5kZXYuZW5naW5lZXJpbmcuYWZmaXhhcGkuY29tIiwic3ViIjoiZGV2ZWxvcGVyIiwiYXVkIjoiM0ZEQUVERjktMURDQTRGNTQtODc5NDlGNkEtNDEwMjc2NDMifQ.VLWYjCQvBS0C3ZA6_J3-U-idZj5EYI2IlDdTjAWBxSIHGufp6cqaVodKsF2BeIqcIeB3P0lW-KL9mY3xGd7ckQ' \\
-  'https://dev.api.affixapi.com/2023-03-01/developer/employees'
+  'https://dev.api.affixapi.com/2023-03-01/xhr/employees'
 ```
 
 ### prod
@@ -48,7 +48,7 @@ eyJhbGciOiJFUzI1NiIsImtpZCI6Ims5RmxwSFR1YklmZWNsUU5QRVZzeFcxazFZZ0Zfbk1BWllOSGVu
 curl --fail \\
   -X GET \\
   -H 'Authorization: Bearer eyJhbGciOiJFUzI1NiIsImtpZCI6Ims5RmxwSFR1YklmZWNsUU5QRVZzeFcxazFZZ0Zfbk1BWllOSGVuOFQxdGciLCJ0eXAiOiJKV1MifQ.eyJwcm92aWRlciI6InNhbmRib3giLCJzY29wZXMiOlsiLzIwMjMtMDMtMDEvZGV2ZWxvcGVyL2NvbXBhbnkiLCIvMjAyMy0wMy0wMS9kZXZlbG9wZXIvZW1wbG95ZWUiLCIvMjAyMy0wMy0wMS9kZXZlbG9wZXIvZW1wbG95ZWVzIiwiLzIwMjMtMDMtMDEvZGV2ZWxvcGVyL2lkZW50aXR5IiwiLzIwMjMtMDMtMDEvZGV2ZWxvcGVyL3BheXJ1bnMiLCIvMjAyMy0wMy0wMS9kZXZlbG9wZXIvcGF5cnVucy86cGF5cnVuX2lkIiwiLzIwMjMtMDMtMDEvZGV2ZWxvcGVyL3RpbWUtb2ZmLWJhbGFuY2VzIiwiLzIwMjMtMDMtMDEvZGV2ZWxvcGVyL3RpbWUtb2ZmLWVudHJpZXMiLCIvMjAyMy0wMy0wMS9kZXZlbG9wZXIvdGltZXNoZWV0cyJdLCJ0b2tlbiI6IjI5YjFjYTg4LWNlNjktNDgyZC1iNGZjLTkzMWMzZmJkYWM4ZSIsImlhdCI6MTcwMjkyMTA4MywiaXNzIjoicHVibGljYXBpLWludGVybWVkaWF0ZS5wcm9kLmVuZ2luZWVyaW5nLmFmZml4YXBpLmNvbSIsInN1YiI6ImRldmVsb3BlciIsImF1ZCI6IjA4QkIwODFFLUQ5QUI0RDE0LThERjk5MjMzLTY2NjE1Q0U5In0.2zdpFAmiyYiYk6MOcbXNUwwR4M1Fextnaac340x54AidiWXCyw-u9KeavbqfYF6q8a9kcDLrxhJ8Wc_3tIzuVw' \\
-  'https://api.affixapi.com/2023-03-01/developer/employees'
+  'https://api.affixapi.com/2023-03-01/xhr/employees'
 ```
 
 # Compression
@@ -296,10 +296,10 @@ with openapi_client.ApiClient(configuration) as api_client:
     
     try:
         # Company
-        api_response = api_instance.developer_companies20230301()
+        api_response = api_instance.official_companies20230301()
         pprint(api_response)
     except openapi_client.ApiException as e:
-        print("Exception when calling 20230301Api->developer_companies20230301: %s\n" % e)
+        print("Exception when calling 20230301Api->official_companies20230301: %s\n" % e)
 ```
 
 ## Documentation for API Endpoints
@@ -308,17 +308,6 @@ All URIs are relative to *https://api.affixapi.com*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*20230301Api* | [**developer_companies20230301**](docs/20230301Api.md#developer_companies20230301) | **GET** /2023-03-01/developer/company | Company
-*20230301Api* | [**developer_create_employee20230301**](docs/20230301Api.md#developer_create_employee20230301) | **POST** /2023-03-01/developer/employee | Create employee
-*20230301Api* | [**developer_employees20230301**](docs/20230301Api.md#developer_employees20230301) | **GET** /2023-03-01/developer/employees | Employees
-*20230301Api* | [**developer_groups20230301**](docs/20230301Api.md#developer_groups20230301) | **GET** /2023-03-01/developer/groups | Groups
-*20230301Api* | [**developer_identity20230301**](docs/20230301Api.md#developer_identity20230301) | **GET** /2023-03-01/developer/identity | Identity
-*20230301Api* | [**developer_payruns20230301**](docs/20230301Api.md#developer_payruns20230301) | **GET** /2023-03-01/developer/payruns | Payruns
-*20230301Api* | [**developer_payslips20230301**](docs/20230301Api.md#developer_payslips20230301) | **GET** /2023-03-01/developer/payruns/{payrun_id} | Payslips
-*20230301Api* | [**developer_time_off_balances20230301**](docs/20230301Api.md#developer_time_off_balances20230301) | **GET** /2023-03-01/developer/time-off-balances | Time off balances
-*20230301Api* | [**developer_time_off_entries20230301**](docs/20230301Api.md#developer_time_off_entries20230301) | **GET** /2023-03-01/developer/time-off-entries | Time off entries
-*20230301Api* | [**developer_timesheets20230301**](docs/20230301Api.md#developer_timesheets20230301) | **GET** /2023-03-01/developer/timesheets | Timesheets
-*20230301Api* | [**developer_work_locations20230301**](docs/20230301Api.md#developer_work_locations20230301) | **GET** /2023-03-01/developer/work-locations | Work locations
 *20230301Api* | [**official_companies20230301**](docs/20230301Api.md#official_companies20230301) | **GET** /2023-03-01/official/company | Company
 *20230301Api* | [**official_create_employee20230301**](docs/20230301Api.md#official_create_employee20230301) | **POST** /2023-03-01/official/employee | Create Employee
 *20230301Api* | [**official_employees20230301**](docs/20230301Api.md#official_employees20230301) | **GET** /2023-03-01/official/employees | Employees
@@ -328,18 +317,18 @@ Class | Method | HTTP request | Description
 *20230301Api* | [**official_timesheets20230301**](docs/20230301Api.md#official_timesheets20230301) | **GET** /2023-03-01/official/timesheets | Timesheets
 *20230301Api* | [**official_work_locations20230301**](docs/20230301Api.md#official_work_locations20230301) | **GET** /2023-03-01/official/work-locations | Work locations
 *20230301Api* | [**officialdentity20230301**](docs/20230301Api.md#officialdentity20230301) | **GET** /2023-03-01/official/identity | Identity
+*20230301Api* | [**xhr_companies20230301**](docs/20230301Api.md#xhr_companies20230301) | **GET** /2023-03-01/xhr/company | Company
+*20230301Api* | [**xhr_create_employee20230301**](docs/20230301Api.md#xhr_create_employee20230301) | **POST** /2023-03-01/xhr/employee | Create employee
+*20230301Api* | [**xhr_employees20230301**](docs/20230301Api.md#xhr_employees20230301) | **GET** /2023-03-01/xhr/employees | Employees
+*20230301Api* | [**xhr_groups20230301**](docs/20230301Api.md#xhr_groups20230301) | **GET** /2023-03-01/xhr/groups | Groups
+*20230301Api* | [**xhr_identity20230301**](docs/20230301Api.md#xhr_identity20230301) | **GET** /2023-03-01/xhr/identity | Identity
+*20230301Api* | [**xhr_payruns20230301**](docs/20230301Api.md#xhr_payruns20230301) | **GET** /2023-03-01/xhr/payruns | Payruns
+*20230301Api* | [**xhr_payslips20230301**](docs/20230301Api.md#xhr_payslips20230301) | **GET** /2023-03-01/xhr/payruns/{payrun_id} | Payslips
+*20230301Api* | [**xhr_time_off_balances20230301**](docs/20230301Api.md#xhr_time_off_balances20230301) | **GET** /2023-03-01/xhr/time-off-balances | Time off balances
+*20230301Api* | [**xhr_time_off_entries20230301**](docs/20230301Api.md#xhr_time_off_entries20230301) | **GET** /2023-03-01/xhr/time-off-entries | Time off entries
+*20230301Api* | [**xhr_timesheets20230301**](docs/20230301Api.md#xhr_timesheets20230301) | **GET** /2023-03-01/xhr/timesheets | Timesheets
+*20230301Api* | [**xhr_work_locations20230301**](docs/20230301Api.md#xhr_work_locations20230301) | **GET** /2023-03-01/xhr/work-locations | Work locations
 *CoreApi* | [**providers**](docs/CoreApi.md#providers) | **GET** /providers | Providers
-*DeveloperApi* | [**developer_companies20230301**](docs/DeveloperApi.md#developer_companies20230301) | **GET** /2023-03-01/developer/company | Company
-*DeveloperApi* | [**developer_create_employee20230301**](docs/DeveloperApi.md#developer_create_employee20230301) | **POST** /2023-03-01/developer/employee | Create employee
-*DeveloperApi* | [**developer_employees20230301**](docs/DeveloperApi.md#developer_employees20230301) | **GET** /2023-03-01/developer/employees | Employees
-*DeveloperApi* | [**developer_groups20230301**](docs/DeveloperApi.md#developer_groups20230301) | **GET** /2023-03-01/developer/groups | Groups
-*DeveloperApi* | [**developer_identity20230301**](docs/DeveloperApi.md#developer_identity20230301) | **GET** /2023-03-01/developer/identity | Identity
-*DeveloperApi* | [**developer_payruns20230301**](docs/DeveloperApi.md#developer_payruns20230301) | **GET** /2023-03-01/developer/payruns | Payruns
-*DeveloperApi* | [**developer_payslips20230301**](docs/DeveloperApi.md#developer_payslips20230301) | **GET** /2023-03-01/developer/payruns/{payrun_id} | Payslips
-*DeveloperApi* | [**developer_time_off_balances20230301**](docs/DeveloperApi.md#developer_time_off_balances20230301) | **GET** /2023-03-01/developer/time-off-balances | Time off balances
-*DeveloperApi* | [**developer_time_off_entries20230301**](docs/DeveloperApi.md#developer_time_off_entries20230301) | **GET** /2023-03-01/developer/time-off-entries | Time off entries
-*DeveloperApi* | [**developer_timesheets20230301**](docs/DeveloperApi.md#developer_timesheets20230301) | **GET** /2023-03-01/developer/timesheets | Timesheets
-*DeveloperApi* | [**developer_work_locations20230301**](docs/DeveloperApi.md#developer_work_locations20230301) | **GET** /2023-03-01/developer/work-locations | Work locations
 *ManagementApi* | [**client**](docs/ManagementApi.md#client) | **GET** /2023-03-01/management/client | Client
 *ManagementApi* | [**disconnect**](docs/ManagementApi.md#disconnect) | **POST** /2023-03-01/management/disconnect | Disconnect token
 *ManagementApi* | [**introspect**](docs/ManagementApi.md#introspect) | **GET** /2023-03-01/management/introspect | Inspect token
@@ -355,6 +344,17 @@ Class | Method | HTTP request | Description
 *OfficialApi* | [**official_timesheets20230301**](docs/OfficialApi.md#official_timesheets20230301) | **GET** /2023-03-01/official/timesheets | Timesheets
 *OfficialApi* | [**official_work_locations20230301**](docs/OfficialApi.md#official_work_locations20230301) | **GET** /2023-03-01/official/work-locations | Work locations
 *OfficialApi* | [**officialdentity20230301**](docs/OfficialApi.md#officialdentity20230301) | **GET** /2023-03-01/official/identity | Identity
+*XHRApi* | [**xhr_companies20230301**](docs/XHRApi.md#xhr_companies20230301) | **GET** /2023-03-01/xhr/company | Company
+*XHRApi* | [**xhr_create_employee20230301**](docs/XHRApi.md#xhr_create_employee20230301) | **POST** /2023-03-01/xhr/employee | Create employee
+*XHRApi* | [**xhr_employees20230301**](docs/XHRApi.md#xhr_employees20230301) | **GET** /2023-03-01/xhr/employees | Employees
+*XHRApi* | [**xhr_groups20230301**](docs/XHRApi.md#xhr_groups20230301) | **GET** /2023-03-01/xhr/groups | Groups
+*XHRApi* | [**xhr_identity20230301**](docs/XHRApi.md#xhr_identity20230301) | **GET** /2023-03-01/xhr/identity | Identity
+*XHRApi* | [**xhr_payruns20230301**](docs/XHRApi.md#xhr_payruns20230301) | **GET** /2023-03-01/xhr/payruns | Payruns
+*XHRApi* | [**xhr_payslips20230301**](docs/XHRApi.md#xhr_payslips20230301) | **GET** /2023-03-01/xhr/payruns/{payrun_id} | Payslips
+*XHRApi* | [**xhr_time_off_balances20230301**](docs/XHRApi.md#xhr_time_off_balances20230301) | **GET** /2023-03-01/xhr/time-off-balances | Time off balances
+*XHRApi* | [**xhr_time_off_entries20230301**](docs/XHRApi.md#xhr_time_off_entries20230301) | **GET** /2023-03-01/xhr/time-off-entries | Time off entries
+*XHRApi* | [**xhr_timesheets20230301**](docs/XHRApi.md#xhr_timesheets20230301) | **GET** /2023-03-01/xhr/timesheets | Timesheets
+*XHRApi* | [**xhr_work_locations20230301**](docs/XHRApi.md#xhr_work_locations20230301) | **GET** /2023-03-01/xhr/work-locations | Work locations
 
 
 ## Documentation For Models

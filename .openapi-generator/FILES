@@ -16,7 +16,6 @@ docs/CreateEmployeeRequestBankAccount.md
 docs/CreateEmployeeRequestManager.md
 docs/CurrencyRequest.md
 docs/CurrencyResponse.md
-docs/DeveloperApi.md
 docs/DisconnectResponse.md
 docs/EmployeeResponse.md
 docs/Employees20230301Response.md
@@ -62,14 +61,15 @@ docs/TokenRequest.md
 docs/TokenResponse.md
 docs/TokensResponse.md
 docs/WorkLocations20230301Response.md
+docs/XHRApi.md
 git_push.sh
 openapi_client/__init__.py
 openapi_client/api/2023_03_01_api.py
 openapi_client/api/__init__.py
 openapi_client/api/core_api.py
-openapi_client/api/developer_api.py
 openapi_client/api/management_api.py
 openapi_client/api/official_api.py
+openapi_client/api/xhr_api.py
 openapi_client/api_client.py
 openapi_client/apis/__init__.py
 openapi_client/configuration.py
@@ -150,7 +150,6 @@ test/test_create_employee_request_bank_account.py
 test/test_create_employee_request_manager.py
 test/test_currency_request.py
 test/test_currency_response.py
-test/test_developer_api.py
 test/test_disconnect_response.py
 test/test_employee_response.py
 test/test_employees20230301_response.py
@@ -196,4 +195,5 @@ test/test_token_request.py
 test/test_token_response.py
 test/test_tokens_response.py
 test/test_work_locations20230301_response.py
+test/test_xhr_api.py
 tox.ini

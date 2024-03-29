@@ -16,6 +16,6 @@
 # Import APIs into API package:
 from openapi_client.api.2023_03_01_api import 20230301Api
 from openapi_client.api.core_api import CoreApi
-from openapi_client.api.developer_api import DeveloperApi
 from openapi_client.api.management_api import ManagementApi
 from openapi_client.api.official_api import OfficialApi
+from openapi_client.api.xhr_api import XHRApi

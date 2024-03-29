@@ -1,24 +1,24 @@
-# openapi_client.DeveloperApi
+# openapi_client.XHRApi
 
 All URIs are relative to *https://api.affixapi.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**developer_companies20230301**](DeveloperApi.md#developer_companies20230301) | **GET** /2023-03-01/developer/company | Company
-[**developer_create_employee20230301**](DeveloperApi.md#developer_create_employee20230301) | **POST** /2023-03-01/developer/employee | Create employee
-[**developer_employees20230301**](DeveloperApi.md#developer_employees20230301) | **GET** /2023-03-01/developer/employees | Employees
-[**developer_groups20230301**](DeveloperApi.md#developer_groups20230301) | **GET** /2023-03-01/developer/groups | Groups
-[**developer_identity20230301**](DeveloperApi.md#developer_identity20230301) | **GET** /2023-03-01/developer/identity | Identity
-[**developer_payruns20230301**](DeveloperApi.md#developer_payruns20230301) | **GET** /2023-03-01/developer/payruns | Payruns
-[**developer_payslips20230301**](DeveloperApi.md#developer_payslips20230301) | **GET** /2023-03-01/developer/payruns/{payrun_id} | Payslips
-[**developer_time_off_balances20230301**](DeveloperApi.md#developer_time_off_balances20230301) | **GET** /2023-03-01/developer/time-off-balances | Time off balances
-[**developer_time_off_entries20230301**](DeveloperApi.md#developer_time_off_entries20230301) | **GET** /2023-03-01/developer/time-off-entries | Time off entries
-[**developer_timesheets20230301**](DeveloperApi.md#developer_timesheets20230301) | **GET** /2023-03-01/developer/timesheets | Timesheets
-[**developer_work_locations20230301**](DeveloperApi.md#developer_work_locations20230301) | **GET** /2023-03-01/developer/work-locations | Work locations
+[**xhr_companies20230301**](XHRApi.md#xhr_companies20230301) | **GET** /2023-03-01/xhr/company | Company
+[**xhr_create_employee20230301**](XHRApi.md#xhr_create_employee20230301) | **POST** /2023-03-01/xhr/employee | Create employee
+[**xhr_employees20230301**](XHRApi.md#xhr_employees20230301) | **GET** /2023-03-01/xhr/employees | Employees
+[**xhr_groups20230301**](XHRApi.md#xhr_groups20230301) | **GET** /2023-03-01/xhr/groups | Groups
+[**xhr_identity20230301**](XHRApi.md#xhr_identity20230301) | **GET** /2023-03-01/xhr/identity | Identity
+[**xhr_payruns20230301**](XHRApi.md#xhr_payruns20230301) | **GET** /2023-03-01/xhr/payruns | Payruns
+[**xhr_payslips20230301**](XHRApi.md#xhr_payslips20230301) | **GET** /2023-03-01/xhr/payruns/{payrun_id} | Payslips
+[**xhr_time_off_balances20230301**](XHRApi.md#xhr_time_off_balances20230301) | **GET** /2023-03-01/xhr/time-off-balances | Time off balances
+[**xhr_time_off_entries20230301**](XHRApi.md#xhr_time_off_entries20230301) | **GET** /2023-03-01/xhr/time-off-entries | Time off entries
+[**xhr_timesheets20230301**](XHRApi.md#xhr_timesheets20230301) | **GET** /2023-03-01/xhr/timesheets | Timesheets
+[**xhr_work_locations20230301**](XHRApi.md#xhr_work_locations20230301) | **GET** /2023-03-01/xhr/work-locations | Work locations
 
 
-# **developer_companies20230301**
-> Companies20230301Response developer_companies20230301()
+# **xhr_companies20230301**
+> Companies20230301Response xhr_companies20230301()
 
 Company
 
@@ -30,7 +30,7 @@ Retrieve company information
 ```python
 import time
 import openapi_client
-from openapi_client.api import developer_api
+from openapi_client.api import xhr_api
 from openapi_client.model.message_response import MessageResponse
 from openapi_client.model.inline_response401 import InlineResponse401
 from openapi_client.model.companies20230301_response import Companies20230301Response
@@ -55,15 +55,15 @@ configuration.api_key['access-token'] = 'YOUR_API_KEY'
 # Enter a context with an instance of the API client
 with openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = developer_api.DeveloperApi(api_client)
+    api_instance = xhr_api.XHRApi(api_client)
 
     # example, this endpoint has no required or optional parameters
     try:
         # Company
-        api_response = api_instance.developer_companies20230301()
+        api_response = api_instance.xhr_companies20230301()
         pprint(api_response)
     except openapi_client.ApiException as e:
-        print("Exception when calling DeveloperApi->developer_companies20230301: %s\n" % e)
+        print("Exception when calling XHRApi->xhr_companies20230301: %s\n" % e)
 ```
 
 
@@ -96,8 +96,8 @@ This endpoint does not need any parameter.
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **developer_create_employee20230301**
-> EmployeeResponse developer_create_employee20230301(create_employee_request)
+# **xhr_create_employee20230301**
+> EmployeeResponse xhr_create_employee20230301(create_employee_request)
 
 Create employee
 
@@ -109,7 +109,7 @@ Creates a new Employee
 ```python
 import time
 import openapi_client
-from openapi_client.api import developer_api
+from openapi_client.api import xhr_api
 from openapi_client.model.employee_response import EmployeeResponse
 from openapi_client.model.message_response import MessageResponse
 from openapi_client.model.create_employee_request import CreateEmployeeRequest
@@ -135,7 +135,7 @@ configuration.api_key['access-token'] = 'YOUR_API_KEY'
 # Enter a context with an instance of the API client
 with openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = developer_api.DeveloperApi(api_client)
+    api_instance = xhr_api.XHRApi(api_client)
     create_employee_request = CreateEmployeeRequest(
         employee_number="2",
         first_name="Greg",
@@ -215,10 +215,10 @@ with openapi_client.ApiClient(configuration) as api_client:
     # example passing only required values which don't have defaults set
     try:
         # Create employee
-        api_response = api_instance.developer_create_employee20230301(create_employee_request)
+        api_response = api_instance.xhr_create_employee20230301(create_employee_request)
         pprint(api_response)
     except openapi_client.ApiException as e:
-        print("Exception when calling DeveloperApi->developer_create_employee20230301: %s\n" % e)
+        print("Exception when calling XHRApi->xhr_create_employee20230301: %s\n" % e)
 ```
 
 
@@ -253,8 +253,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **developer_employees20230301**
-> Employees20230301Response developer_employees20230301()
+# **xhr_employees20230301**
+> Employees20230301Response xhr_employees20230301()
 
 Employees
 
@@ -266,7 +266,7 @@ List the individuals (employees, contractors, accountants, and others) listed in
 ```python
 import time
 import openapi_client
-from openapi_client.api import developer_api
+from openapi_client.api import xhr_api
 from openapi_client.model.message_response import MessageResponse
 from openapi_client.model.employees20230301_response import Employees20230301Response
 from openapi_client.model.inline_response401 import InlineResponse401
@@ -291,15 +291,15 @@ configuration.api_key['access-token'] = 'YOUR_API_KEY'
 # Enter a context with an instance of the API client
 with openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = developer_api.DeveloperApi(api_client)
+    api_instance = xhr_api.XHRApi(api_client)
 
     # example, this endpoint has no required or optional parameters
     try:
         # Employees
-        api_response = api_instance.developer_employees20230301()
+        api_response = api_instance.xhr_employees20230301()
         pprint(api_response)
     except openapi_client.ApiException as e:
-        print("Exception when calling DeveloperApi->developer_employees20230301: %s\n" % e)
+        print("Exception when calling XHRApi->xhr_employees20230301: %s\n" % e)
 ```
 
 
@@ -332,8 +332,8 @@ This endpoint does not need any parameter.
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **developer_groups20230301**
-> Groups20230301Response developer_groups20230301()
+# **xhr_groups20230301**
+> Groups20230301Response xhr_groups20230301()
 
 Groups
 
@@ -345,7 +345,7 @@ The Group object is used to represent any subset of employees, such as PayGroup,
 ```python
 import time
 import openapi_client
-from openapi_client.api import developer_api
+from openapi_client.api import xhr_api
 from openapi_client.model.groups20230301_response import Groups20230301Response
 from openapi_client.model.message_response import MessageResponse
 from openapi_client.model.inline_response401 import InlineResponse401
@@ -370,15 +370,15 @@ configuration.api_key['access-token'] = 'YOUR_API_KEY'
 # Enter a context with an instance of the API client
 with openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = developer_api.DeveloperApi(api_client)
+    api_instance = xhr_api.XHRApi(api_client)
 
     # example, this endpoint has no required or optional parameters
     try:
         # Groups
-        api_response = api_instance.developer_groups20230301()
+        api_response = api_instance.xhr_groups20230301()
         pprint(api_response)
     except openapi_client.ApiException as e:
-        print("Exception when calling DeveloperApi->developer_groups20230301: %s\n" % e)
+        print("Exception when calling XHRApi->xhr_groups20230301: %s\n" % e)
 ```
 
 
@@ -411,8 +411,8 @@ This endpoint does not need any parameter.
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **developer_identity20230301**
-> IdentityResponse developer_identity20230301()
+# **xhr_identity20230301**
+> IdentityResponse xhr_identity20230301()
 
 Identity
 
@@ -424,7 +424,7 @@ List information of the user for the respective account
 ```python
 import time
 import openapi_client
-from openapi_client.api import developer_api
+from openapi_client.api import xhr_api
 from openapi_client.model.message_response import MessageResponse
 from openapi_client.model.identity_response import IdentityResponse
 from openapi_client.model.inline_response401 import InlineResponse401
@@ -449,15 +449,15 @@ configuration.api_key['access-token'] = 'YOUR_API_KEY'
 # Enter a context with an instance of the API client
 with openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = developer_api.DeveloperApi(api_client)
+    api_instance = xhr_api.XHRApi(api_client)
 
     # example, this endpoint has no required or optional parameters
     try:
         # Identity
-        api_response = api_instance.developer_identity20230301()
+        api_response = api_instance.xhr_identity20230301()
         pprint(api_response)
     except openapi_client.ApiException as e:
-        print("Exception when calling DeveloperApi->developer_identity20230301: %s\n" % e)
+        print("Exception when calling XHRApi->xhr_identity20230301: %s\n" % e)
 ```
 
 
@@ -488,8 +488,8 @@ This endpoint does not need any parameter.
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **developer_payruns20230301**
-> Payruns20230301Response developer_payruns20230301(start_date, end_date)
+# **xhr_payruns20230301**
+> Payruns20230301Response xhr_payruns20230301(start_date, end_date)
 
 Payruns
 
@@ -501,7 +501,7 @@ List all the pay runs that occurred during the respective period.  Supported int
 ```python
 import time
 import openapi_client
-from openapi_client.api import developer_api
+from openapi_client.api import xhr_api
 from openapi_client.model.message_response import MessageResponse
 from openapi_client.model.inline_response401 import InlineResponse401
 from openapi_client.model.payruns20230301_response import Payruns20230301Response
@@ -526,17 +526,17 @@ configuration.api_key['access-token'] = 'YOUR_API_KEY'
 # Enter a context with an instance of the API client
 with openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = developer_api.DeveloperApi(api_client)
+    api_instance = xhr_api.XHRApi(api_client)
     start_date = dateutil_parser('Fri Jan 01 00:00:00 UTC 2021').date() # date | The start date of the search period
     end_date = dateutil_parser('Fri Dec 31 00:00:00 UTC 2021').date() # date | The end date of the search period
 
     # example passing only required values which don't have defaults set
     try:
         # Payruns
-        api_response = api_instance.developer_payruns20230301(start_date, end_date)
+        api_response = api_instance.xhr_payruns20230301(start_date, end_date)
         pprint(api_response)
     except openapi_client.ApiException as e:
-        print("Exception when calling DeveloperApi->developer_payruns20230301: %s\n" % e)
+        print("Exception when calling XHRApi->xhr_payruns20230301: %s\n" % e)
 ```
 
 
@@ -573,8 +573,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **developer_payslips20230301**
-> Payslips20230301Response developer_payslips20230301(payrun_id)
+# **xhr_payslips20230301**
+> Payslips20230301Response xhr_payslips20230301(payrun_id)
 
 Payslips
 
@@ -586,7 +586,7 @@ Retrieves payslips from a specific payrun.  Supported integrations:   - sageone 
 ```python
 import time
 import openapi_client
-from openapi_client.api import developer_api
+from openapi_client.api import xhr_api
 from openapi_client.model.message_response import MessageResponse
 from openapi_client.model.inline_response401 import InlineResponse401
 from openapi_client.model.payslips20230301_response import Payslips20230301Response
@@ -611,16 +611,16 @@ configuration.api_key['access-token'] = 'YOUR_API_KEY'
 # Enter a context with an instance of the API client
 with openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = developer_api.DeveloperApi(api_client)
+    api_instance = xhr_api.XHRApi(api_client)
     payrun_id = "payrun_id_example" # str | The id of the payrun.
 
     # example passing only required values which don't have defaults set
     try:
         # Payslips
-        api_response = api_instance.developer_payslips20230301(payrun_id)
+        api_response = api_instance.xhr_payslips20230301(payrun_id)
         pprint(api_response)
     except openapi_client.ApiException as e:
-        print("Exception when calling DeveloperApi->developer_payslips20230301: %s\n" % e)
+        print("Exception when calling XHRApi->xhr_payslips20230301: %s\n" % e)
 ```
 
 
@@ -656,8 +656,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **developer_time_off_balances20230301**
-> TimeOffBalances20230301Response developer_time_off_balances20230301()
+# **xhr_time_off_balances20230301**
+> TimeOffBalances20230301Response xhr_time_off_balances20230301()
 
 Time off balances
 
@@ -669,7 +669,7 @@ Retrieve all time off balances.
 ```python
 import time
 import openapi_client
-from openapi_client.api import developer_api
+from openapi_client.api import xhr_api
 from openapi_client.model.message_response import MessageResponse
 from openapi_client.model.inline_response401 import InlineResponse401
 from openapi_client.model.time_off_balances20230301_response import TimeOffBalances20230301Response
@@ -694,15 +694,15 @@ configuration.api_key['access-token'] = 'YOUR_API_KEY'
 # Enter a context with an instance of the API client
 with openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = developer_api.DeveloperApi(api_client)
+    api_instance = xhr_api.XHRApi(api_client)
 
     # example, this endpoint has no required or optional parameters
     try:
         # Time off balances
-        api_response = api_instance.developer_time_off_balances20230301()
+        api_response = api_instance.xhr_time_off_balances20230301()
         pprint(api_response)
     except openapi_client.ApiException as e:
-        print("Exception when calling DeveloperApi->developer_time_off_balances20230301: %s\n" % e)
+        print("Exception when calling XHRApi->xhr_time_off_balances20230301: %s\n" % e)
 ```
 
 
@@ -735,8 +735,8 @@ This endpoint does not need any parameter.
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **developer_time_off_entries20230301**
-> TimeOffEntries20230301Response developer_time_off_entries20230301()
+# **xhr_time_off_entries20230301**
+> TimeOffEntries20230301Response xhr_time_off_entries20230301()
 
 Time off entries
 
@@ -748,7 +748,7 @@ Retrieve time off / absence entries
 ```python
 import time
 import openapi_client
-from openapi_client.api import developer_api
+from openapi_client.api import xhr_api
 from openapi_client.model.message_response import MessageResponse
 from openapi_client.model.inline_response401 import InlineResponse401
 from openapi_client.model.time_off_entries20230301_response import TimeOffEntries20230301Response
@@ -773,15 +773,15 @@ configuration.api_key['access-token'] = 'YOUR_API_KEY'
 # Enter a context with an instance of the API client
 with openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = developer_api.DeveloperApi(api_client)
+    api_instance = xhr_api.XHRApi(api_client)
 
     # example, this endpoint has no required or optional parameters
     try:
         # Time off entries
-        api_response = api_instance.developer_time_off_entries20230301()
+        api_response = api_instance.xhr_time_off_entries20230301()
         pprint(api_response)
     except openapi_client.ApiException as e:
-        print("Exception when calling DeveloperApi->developer_time_off_entries20230301: %s\n" % e)
+        print("Exception when calling XHRApi->xhr_time_off_entries20230301: %s\n" % e)
 ```
 
 
@@ -814,8 +814,8 @@ This endpoint does not need any parameter.
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **developer_timesheets20230301**
-> Timesheets20230301Response developer_timesheets20230301()
+# **xhr_timesheets20230301**
+> Timesheets20230301Response xhr_timesheets20230301()
 
 Timesheets
 
@@ -827,7 +827,7 @@ Retrieve Timesheets
 ```python
 import time
 import openapi_client
-from openapi_client.api import developer_api
+from openapi_client.api import xhr_api
 from openapi_client.model.message_response import MessageResponse
 from openapi_client.model.inline_response401 import InlineResponse401
 from openapi_client.model.timesheets20230301_response import Timesheets20230301Response
@@ -852,15 +852,15 @@ configuration.api_key['access-token'] = 'YOUR_API_KEY'
 # Enter a context with an instance of the API client
 with openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = developer_api.DeveloperApi(api_client)
+    api_instance = xhr_api.XHRApi(api_client)
 
     # example, this endpoint has no required or optional parameters
     try:
         # Timesheets
-        api_response = api_instance.developer_timesheets20230301()
+        api_response = api_instance.xhr_timesheets20230301()
         pprint(api_response)
     except openapi_client.ApiException as e:
-        print("Exception when calling DeveloperApi->developer_timesheets20230301: %s\n" % e)
+        print("Exception when calling XHRApi->xhr_timesheets20230301: %s\n" % e)
 ```
 
 
@@ -893,8 +893,8 @@ This endpoint does not need any parameter.
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **developer_work_locations20230301**
-> WorkLocations20230301Response developer_work_locations20230301()
+# **xhr_work_locations20230301**
+> WorkLocations20230301Response xhr_work_locations20230301()
 
 Work locations
 
@@ -906,7 +906,7 @@ The Location object is used to represent an address that can be associated with 
 ```python
 import time
 import openapi_client
-from openapi_client.api import developer_api
+from openapi_client.api import xhr_api
 from openapi_client.model.message_response import MessageResponse
 from openapi_client.model.inline_response401 import InlineResponse401
 from openapi_client.model.work_locations20230301_response import WorkLocations20230301Response
@@ -931,15 +931,15 @@ configuration.api_key['access-token'] = 'YOUR_API_KEY'
 # Enter a context with an instance of the API client
 with openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = developer_api.DeveloperApi(api_client)
+    api_instance = xhr_api.XHRApi(api_client)
 
     # example, this endpoint has no required or optional parameters
     try:
         # Work locations
-        api_response = api_instance.developer_work_locations20230301()
+        api_response = api_instance.xhr_work_locations20230301()
         pprint(api_response)
     except openapi_client.ApiException as e:
-        print("Exception when calling DeveloperApi->developer_work_locations20230301: %s\n" % e)
+        print("Exception when calling XHRApi->xhr_work_locations20230301: %s\n" % e)
 ```
 
 
