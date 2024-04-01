@@ -31,13 +31,6 @@ class Test20230301Api(unittest.TestCase):
         """
         pass
 
-    def test_xhr_create_employee20230301(self):
-        """Test case for xhr_create_employee20230301
-
-        Create employee  # noqa: E501
-        """
-        pass
-
     def test_xhr_employees20230301(self):
         """Test case for xhr_employees20230301
 

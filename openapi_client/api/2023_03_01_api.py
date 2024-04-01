@@ -23,12 +23,9 @@ from openapi_client.model_utils import (  # noqa: F401
     validate_and_convert_types
 )
 from openapi_client.model.companies20230301_response import Companies20230301Response
-from openapi_client.model.create_employee_request import CreateEmployeeRequest
-from openapi_client.model.employee_response import EmployeeResponse
 from openapi_client.model.employees20230301_response import Employees20230301Response
 from openapi_client.model.groups20230301_response import Groups20230301Response
 from openapi_client.model.identity_response import IdentityResponse
-from openapi_client.model.inline_response400 import InlineResponse400
 from openapi_client.model.inline_response401 import InlineResponse401
 from openapi_client.model.message_response import MessageResponse
 from openapi_client.model.payruns20230301_response import Payruns20230301Response
@@ -156,126 +153,6 @@ class 20230301Api(object):
             },
             api_client=api_client,
             callable=__xhr_companies20230301
-        )
-
-        def __xhr_create_employee20230301(
-            self,
-            create_employee_request,
-            **kwargs
-        ):
-            """Create employee  # noqa: E501
-
-            Creates a new Employee   # noqa: E501
-            This method makes a synchronous HTTP request by default. To make an
-            asynchronous HTTP request, please pass async_req=True
-
-            >>> thread = api.xhr_create_employee20230301(create_employee_request, async_req=True)
-            >>> result = thread.get()
-
-            Args:
-                create_employee_request (CreateEmployeeRequest):
-
-            Keyword Args:
-                _return_http_data_only (bool): response data without head status
-                    code and headers. Default is True.
-                _preload_content (bool): if False, the urllib3.HTTPResponse object
-                    will be returned without reading/decoding response data.
-                    Default is True.
-                _request_timeout (float/tuple): timeout setting for this request. If one
-                    number provided, it will be total request timeout. It can also
-                    be a pair (tuple) of (connection, read) timeouts.
-                    Default is None.
-                _check_input_type (bool): specifies if type checking
-                    should be done one the data sent to the server.
-                    Default is True.
-                _check_return_type (bool): specifies if type checking
-                    should be done one the data received from the server.
-                    Default is True.
-                _host_index (int/None): specifies the index of the server
-                    that we want to use.
-                    Default is read from the configuration.
-                async_req (bool): execute request asynchronously
-
-            Returns:
-                EmployeeResponse
-                    If the method is called asynchronously, returns the request
-                    thread.
-            """
-            kwargs['async_req'] = kwargs.get(
-                'async_req', False
-            )
-            kwargs['_return_http_data_only'] = kwargs.get(
-                '_return_http_data_only', True
-            )
-            kwargs['_preload_content'] = kwargs.get(
-                '_preload_content', True
-            )
-            kwargs['_request_timeout'] = kwargs.get(
-                '_request_timeout', None
-            )
-            kwargs['_check_input_type'] = kwargs.get(
-                '_check_input_type', True
-            )
-            kwargs['_check_return_type'] = kwargs.get(
-                '_check_return_type', True
-            )
-            kwargs['_host_index'] = kwargs.get('_host_index')
-            kwargs['create_employee_request'] = \
-                create_employee_request
-            return self.call_with_http_info(**kwargs)
-
-        self.xhr_create_employee20230301 = _Endpoint(
-            settings={
-                'response_type': (EmployeeResponse,),
-                'auth': [
-                    'access-token'
-                ],
-                'endpoint_path': '/2023-03-01/xhr/employee',
-                'operation_id': 'xhr_create_employee20230301',
-                'http_method': 'POST',
-                'servers': None,
-            },
-            params_map={
-                'all': [
-                    'create_employee_request',
-                ],
-                'required': [
-                    'create_employee_request',
-                ],
-                'nullable': [
-                ],
-                'enum': [
-                ],
-                'validation': [
-                ]
-            },
-            root_map={
-                'validations': {
-                },
-                'allowed_values': {
-                },
-                'openapi_types': {
-                    'create_employee_request':
-                        (CreateEmployeeRequest,),
-                },
-                'attribute_map': {
-                },
-                'location_map': {
-                    'create_employee_request': 'body',
-                },
-                'collection_format_map': {
-                }
-            },
-            headers_map={
-                'accept': [
-                    'application/json'
-                ],
-                'content_type': [
-                    'application/json'
-                ]
-            },
-            api_client=api_client,
-            callable=__xhr_create_employee20230301
         )
 
         def __xhr_employees20230301(

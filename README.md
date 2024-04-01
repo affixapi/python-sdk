@@ -257,12 +257,9 @@ import openapi_client
 from pprint import pprint
 from openapi_client.api import 2023_03_01_api
 from openapi_client.model.companies20230301_response import Companies20230301Response
-from openapi_client.model.create_employee_request import CreateEmployeeRequest
-from openapi_client.model.employee_response import EmployeeResponse
 from openapi_client.model.employees20230301_response import Employees20230301Response
 from openapi_client.model.groups20230301_response import Groups20230301Response
 from openapi_client.model.identity_response import IdentityResponse
-from openapi_client.model.inline_response400 import InlineResponse400
 from openapi_client.model.inline_response401 import InlineResponse401
 from openapi_client.model.message_response import MessageResponse
 from openapi_client.model.payruns20230301_response import Payruns20230301Response
@@ -309,7 +306,6 @@ All URIs are relative to *https://api.affixapi.com*
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *20230301Api* | [**xhr_companies20230301**](docs/20230301Api.md#xhr_companies20230301) | **GET** /2023-03-01/xhr/company | Company
-*20230301Api* | [**xhr_create_employee20230301**](docs/20230301Api.md#xhr_create_employee20230301) | **POST** /2023-03-01/xhr/employee | Create employee
 *20230301Api* | [**xhr_employees20230301**](docs/20230301Api.md#xhr_employees20230301) | **GET** /2023-03-01/xhr/employees | Employees
 *20230301Api* | [**xhr_groups20230301**](docs/20230301Api.md#xhr_groups20230301) | **GET** /2023-03-01/xhr/groups | Groups
 *20230301Api* | [**xhr_identity20230301**](docs/20230301Api.md#xhr_identity20230301) | **GET** /2023-03-01/xhr/identity | Identity
@@ -327,7 +323,6 @@ Class | Method | HTTP request | Description
 *ManagementApi* | [**tokens**](docs/ManagementApi.md#tokens) | **GET** /2023-03-01/management/tokens | Tokens
 *ManagementApi* | [**update_client**](docs/ManagementApi.md#update_client) | **POST** /2023-03-01/management/client | Update client
 *XHRVerticallyIntegratedApi* | [**xhr_companies20230301**](docs/XHRVerticallyIntegratedApi.md#xhr_companies20230301) | **GET** /2023-03-01/xhr/company | Company
-*XHRVerticallyIntegratedApi* | [**xhr_create_employee20230301**](docs/XHRVerticallyIntegratedApi.md#xhr_create_employee20230301) | **POST** /2023-03-01/xhr/employee | Create employee
 *XHRVerticallyIntegratedApi* | [**xhr_employees20230301**](docs/XHRVerticallyIntegratedApi.md#xhr_employees20230301) | **GET** /2023-03-01/xhr/employees | Employees
 *XHRVerticallyIntegratedApi* | [**xhr_groups20230301**](docs/XHRVerticallyIntegratedApi.md#xhr_groups20230301) | **GET** /2023-03-01/xhr/groups | Groups
 *XHRVerticallyIntegratedApi* | [**xhr_identity20230301**](docs/XHRVerticallyIntegratedApi.md#xhr_identity20230301) | **GET** /2023-03-01/xhr/identity | Identity
