@@ -37,7 +37,6 @@ docs/ManagementApi.md
 docs/MessageResponse.md
 docs/ModeRequest.md
 docs/ModeResponse.md
-docs/OfficialApi.md
 docs/PayrunResponse.md
 docs/Payruns20230301Response.md
 docs/PayslipResponse.md
@@ -61,15 +60,14 @@ docs/TokenRequest.md
 docs/TokenResponse.md
 docs/TokensResponse.md
 docs/WorkLocations20230301Response.md
-docs/XHRApi.md
+docs/XHRVerticallyIntegratedApi.md
 git_push.sh
 openapi_client/__init__.py
 openapi_client/api/2023_03_01_api.py
 openapi_client/api/__init__.py
 openapi_client/api/core_api.py
 openapi_client/api/management_api.py
-openapi_client/api/official_api.py
-openapi_client/api/xhr_api.py
+openapi_client/api/xhr__vertically_integrated_api.py
 openapi_client/api_client.py
 openapi_client/apis/__init__.py
 openapi_client/configuration.py
@@ -171,7 +169,6 @@ test/test_management_api.py
 test/test_message_response.py
 test/test_mode_request.py
 test/test_mode_response.py
-test/test_official_api.py
 test/test_payrun_response.py
 test/test_payruns20230301_response.py
 test/test_payslip_response.py
@@ -195,5 +192,5 @@ test/test_token_request.py
 test/test_token_response.py
 test/test_tokens_response.py
 test/test_work_locations20230301_response.py
-test/test_xhr_api.py
+test/test_xhr__vertically_integrated_api.py
 tox.ini
