@@ -18,7 +18,7 @@ from openapi_client.model.company_response import CompanyResponse
 from openapi_client.model.create_employee_request import CreateEmployeeRequest
 from openapi_client.model.create_employee_request_bank_account import CreateEmployeeRequestBankAccount
 from openapi_client.model.create_employee_request_manager import CreateEmployeeRequestManager
-from openapi_client.model.currency_request import CurrencyRequest
+from openapi_client.model.currency_not_null_request import CurrencyNotNullRequest
 from openapi_client.model.currency_response import CurrencyResponse
 from openapi_client.model.disconnect_response import DisconnectResponse
 from openapi_client.model.employee_response import EmployeeResponse

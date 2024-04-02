@@ -14,7 +14,7 @@ docs/CoreApi.md
 docs/CreateEmployeeRequest.md
 docs/CreateEmployeeRequestBankAccount.md
 docs/CreateEmployeeRequestManager.md
-docs/CurrencyRequest.md
+docs/CurrencyNotNullRequest.md
 docs/CurrencyResponse.md
 docs/DisconnectResponse.md
 docs/EmployeeResponse.md
@@ -82,7 +82,7 @@ openapi_client/model/company_response.py
 openapi_client/model/create_employee_request.py
 openapi_client/model/create_employee_request_bank_account.py
 openapi_client/model/create_employee_request_manager.py
-openapi_client/model/currency_request.py
+openapi_client/model/currency_not_null_request.py
 openapi_client/model/currency_response.py
 openapi_client/model/disconnect_response.py
 openapi_client/model/employee_response.py
@@ -146,7 +146,7 @@ test/test_core_api.py
 test/test_create_employee_request.py
 test/test_create_employee_request_bank_account.py
 test/test_create_employee_request_manager.py
-test/test_currency_request.py
+test/test_currency_not_null_request.py
 test/test_currency_response.py
 test/test_disconnect_response.py
 test/test_employee_response.py

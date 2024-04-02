@@ -345,7 +345,7 @@ Class | Method | HTTP request | Description
  - [CreateEmployeeRequest](docs/CreateEmployeeRequest.md)
  - [CreateEmployeeRequestBankAccount](docs/CreateEmployeeRequestBankAccount.md)
  - [CreateEmployeeRequestManager](docs/CreateEmployeeRequestManager.md)
- - [CurrencyRequest](docs/CurrencyRequest.md)
+ - [CurrencyNotNullRequest](docs/CurrencyNotNullRequest.md)
  - [CurrencyResponse](docs/CurrencyResponse.md)
  - [DisconnectResponse](docs/DisconnectResponse.md)
  - [EmployeeResponse](docs/EmployeeResponse.md)

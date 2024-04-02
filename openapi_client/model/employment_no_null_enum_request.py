@@ -28,8 +28,8 @@ from openapi_client.model_utils import (  # noqa: F401
 )
 
 def lazy_import():
-    from openapi_client.model.currency_request import CurrencyRequest
-    globals()['CurrencyRequest'] = CurrencyRequest
+    from openapi_client.model.currency_not_null_request import CurrencyNotNullRequest
+    globals()['CurrencyNotNullRequest'] = CurrencyNotNullRequest
 
 
 class EmploymentNoNullEnumRequest(ModelNormal):
@@ -98,7 +98,7 @@ class EmploymentNoNullEnumRequest(ModelNormal):
             'pay_period': (str, none_type,),  # noqa: E501
             'pay_frequency': (str, none_type,),  # noqa: E501
             'employment_type': (str, none_type,),  # noqa: E501
-            'currency': (CurrencyRequest,),  # noqa: E501
+            'currency': (CurrencyNotNullRequest,),  # noqa: E501
             'effective_date': (date, none_type,),  # noqa: E501
         }
 
@@ -138,7 +138,7 @@ class EmploymentNoNullEnumRequest(ModelNormal):
             pay_period (str, none_type):
             pay_frequency (str, none_type):
             employment_type (str, none_type):
-            currency (CurrencyRequest):
+            currency (CurrencyNotNullRequest):
             effective_date (date, none_type):
 
         Keyword Args:
