@@ -28,7 +28,7 @@ Name | Type | Description | Notes
 **avatar** | **str, none_type** |  | 
 **home_location** | [**AddressResponse**](AddressResponse.md) |  | 
 **work_location** | [**LocationResponse**](LocationResponse.md) |  | 
-**manager** | [**CreateEmployeeRequestManager**](CreateEmployeeRequestManager.md) |  | 
+**manager** | [**EmployeeResponseManager**](EmployeeResponseManager.md) |  | 
 **bank_account** | [**CreateEmployeeRequestBankAccount**](CreateEmployeeRequestBankAccount.md) |  | 
 **employments** | [**[EmploymentResponse], none_type**](EmploymentResponse.md) |  | 
 **custom_fields** | **{str: (bool, date, datetime, dict, float, int, list, str, none_type)}, none_type** |  | 

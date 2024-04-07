@@ -15,13 +15,13 @@ import unittest
 import openapi_client
 from openapi_client.model.address_response import AddressResponse
 from openapi_client.model.create_employee_request_bank_account import CreateEmployeeRequestBankAccount
-from openapi_client.model.create_employee_request_manager import CreateEmployeeRequestManager
+from openapi_client.model.employee_response_manager import EmployeeResponseManager
 from openapi_client.model.employment_response import EmploymentResponse
 from openapi_client.model.groups20230301_response import Groups20230301Response
 from openapi_client.model.location_response import LocationResponse
 globals()['AddressResponse'] = AddressResponse
 globals()['CreateEmployeeRequestBankAccount'] = CreateEmployeeRequestBankAccount
-globals()['CreateEmployeeRequestManager'] = CreateEmployeeRequestManager
+globals()['EmployeeResponseManager'] = EmployeeResponseManager
 globals()['EmploymentResponse'] = EmploymentResponse
 globals()['Groups20230301Response'] = Groups20230301Response
 globals()['LocationResponse'] = LocationResponse

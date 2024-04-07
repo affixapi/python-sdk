@@ -18,6 +18,7 @@ docs/CurrencyNotNullRequest.md
 docs/CurrencyResponse.md
 docs/DisconnectResponse.md
 docs/EmployeeResponse.md
+docs/EmployeeResponseManager.md
 docs/Employees20230301Response.md
 docs/EmploymentNoNullEnumRequest.md
 docs/EmploymentResponse.md
@@ -86,6 +87,7 @@ openapi_client/model/currency_not_null_request.py
 openapi_client/model/currency_response.py
 openapi_client/model/disconnect_response.py
 openapi_client/model/employee_response.py
+openapi_client/model/employee_response_manager.py
 openapi_client/model/employees20230301_response.py
 openapi_client/model/employment_no_null_enum_request.py
 openapi_client/model/employment_response.py
@@ -150,6 +152,7 @@ test/test_currency_not_null_request.py
 test/test_currency_response.py
 test/test_disconnect_response.py
 test/test_employee_response.py
+test/test_employee_response_manager.py
 test/test_employees20230301_response.py
 test/test_employment_no_null_enum_request.py
 test/test_employment_response.py

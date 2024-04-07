@@ -50,6 +50,7 @@ class CurrencyNotNullRequest(ModelSimple):
 
     allowed_values = {
         ('value',): {
+            'None': None,
             'USD': "usd",
             'GBP': "gbp",
             'EUR': "eur",
@@ -61,7 +62,7 @@ class CurrencyNotNullRequest(ModelSimple):
 
     additional_properties_type = None
 
-    _nullable = False
+    _nullable = True
 
     @cached_property
     def openapi_types():

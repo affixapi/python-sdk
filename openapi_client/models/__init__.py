@@ -22,6 +22,7 @@ from openapi_client.model.currency_not_null_request import CurrencyNotNullReques
 from openapi_client.model.currency_response import CurrencyResponse
 from openapi_client.model.disconnect_response import DisconnectResponse
 from openapi_client.model.employee_response import EmployeeResponse
+from openapi_client.model.employee_response_manager import EmployeeResponseManager
 from openapi_client.model.employees20230301_response import Employees20230301Response
 from openapi_client.model.employment_no_null_enum_request import EmploymentNoNullEnumRequest
 from openapi_client.model.employment_response import EmploymentResponse
