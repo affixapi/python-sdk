@@ -54,7 +54,6 @@ class AddressNoNonNullRequest(ModelNormal):
 
     allowed_values = {
         ('country',): {
-            'None': None,
             'CA': "CA",
             'US': "US",
             'MX': "MX",
@@ -121,7 +120,7 @@ class AddressNoNonNullRequest(ModelNormal):
             'street_address': (str, none_type,),  # noqa: E501
             'locality': (str, none_type,),  # noqa: E501
             'administrative_area': (str, none_type,),  # noqa: E501
-            'country': (str, none_type,),  # noqa: E501
+            'country': (str,),  # noqa: E501
             'post_code': (str, none_type,),  # noqa: E501
         }
 
@@ -157,7 +156,7 @@ class AddressNoNonNullRequest(ModelNormal):
             street_address (str, none_type):
             locality (str, none_type):
             administrative_area (str, none_type): The administrative area of the address. If US or CA, the two-letter state or province abbreviation. Else, the province / administrative area; such as, `Dublin 2` or `County Cork` 
-            country (str, none_type): The ISO-3166-2 two-letter abbreviation of the country. Reference https://en.wikipedia.org/wiki/ISO_3166-2 for more details 
+            country (str): The ISO-3166-2 two-letter abbreviation of the country. Reference https://en.wikipedia.org/wiki/ISO_3166-2 for more details 
             post_code (str, none_type):
 
         Keyword Args:
