@@ -18,7 +18,7 @@ Name | Type | Description | Notes
 **tax_id** | **str, none_type** |  | 
 **gender** | **str, none_type** |  | 
 **ethnicity** | **str, none_type** |  | 
-**marital_status** | **str, none_type** |  | 
+**marital_status** | **str, none_type** | &#x60;other&#x60; option can include co-habitating, civil partnership, separated, divorced, widowed, etc  | 
 **date_of_birth** | **date, none_type** |  | 
 **employment_status** | **str, none_type** |  | 
 **employment_type** | **str, none_type** |  | 
