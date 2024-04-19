@@ -85,8 +85,8 @@ class TimeOffBalanceResponse(ModelNormal):
         return {
             'employee_id': (str,),  # noqa: E501
             'remote_id': (str,),  # noqa: E501
-            'balance': (float,),  # noqa: E501
-            'used': (float,),  # noqa: E501
+            'balance': (float, none_type,),  # noqa: E501
+            'used': (float, none_type,),  # noqa: E501
             'policy_name': (str, none_type,),  # noqa: E501
             'policy_type': (str, none_type,),  # noqa: E501
             'remote_created_at': (date, none_type,),  # noqa: E501
@@ -127,8 +127,8 @@ class TimeOffBalanceResponse(ModelNormal):
         Args:
             employee_id (str): The Affix-assigned id of the individual
             remote_id (str): the remote system-assigned id of the individual
-            balance (float):
-            used (float):
+            balance (float, none_type):
+            used (float, none_type):
             policy_name (str, none_type): The name of the policy, as assigned by the remote system
             policy_type (str, none_type):
             remote_created_at (date, none_type):
