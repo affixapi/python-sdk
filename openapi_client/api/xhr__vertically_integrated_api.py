@@ -24,7 +24,7 @@ from openapi_client.model_utils import (  # noqa: F401
 )
 from openapi_client.model.companies20230301_response import Companies20230301Response
 from openapi_client.model.employees20230301_response import Employees20230301Response
-from openapi_client.model.employment_status_not_null import EmploymentStatusNotNull
+from openapi_client.model.employment_status_not_null_not_nullable import EmploymentStatusNotNullNotNullable
 from openapi_client.model.groups20230301_response import Groups20230301Response
 from openapi_client.model.identity_response import IdentityResponse
 from openapi_client.model.inline_response401 import InlineResponse401
@@ -171,7 +171,7 @@ class XHRVerticallyIntegratedApi(object):
 
 
             Keyword Args:
-                employment_status (EmploymentStatusNotNull): Enable server-side filtering of the `employment_status` attribute. Will only include individuals with that attribute explicitly set (ie if an individuals has a `null`, it will not be returned if this parameter is set) . [optional]
+                employment_status (EmploymentStatusNotNullNotNullable): Enable server-side filtering of the `employment_status` attribute. Will only include individuals with that attribute explicitly set (ie if an individuals has a `null`, it will not be returned if this parameter is set) . [optional]
                 _return_http_data_only (bool): response data without head status
                     code and headers. Default is True.
                 _preload_content (bool): if False, the urllib3.HTTPResponse object
@@ -248,7 +248,7 @@ class XHRVerticallyIntegratedApi(object):
                 },
                 'openapi_types': {
                     'employment_status':
-                        (EmploymentStatusNotNull,),
+                        (EmploymentStatusNotNullNotNullable,),
                 },
                 'attribute_map': {
                     'employment_status': 'employment_status',

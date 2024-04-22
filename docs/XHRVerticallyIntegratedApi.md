@@ -112,7 +112,7 @@ from openapi_client.api import xhr__vertically_integrated_api
 from openapi_client.model.message_response import MessageResponse
 from openapi_client.model.employees20230301_response import Employees20230301Response
 from openapi_client.model.inline_response401 import InlineResponse401
-from openapi_client.model.employment_status_not_null import EmploymentStatusNotNull
+from openapi_client.model.employment_status_not_null_not_nullable import EmploymentStatusNotNullNotNullable
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.affixapi.com
 # See configuration.py for a list of all supported configuration parameters.
@@ -135,7 +135,7 @@ configuration.api_key['access-token'] = 'YOUR_API_KEY'
 with openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = xhr__vertically_integrated_api.XHRVerticallyIntegratedApi(api_client)
-    employment_status = EmploymentStatusNotNull("active") # EmploymentStatusNotNull | Enable server-side filtering of the `employment_status` attribute. Will only include individuals with that attribute explicitly set (ie if an individuals has a `null`, it will not be returned if this parameter is set)  (optional)
+    employment_status = EmploymentStatusNotNullNotNullable("active") # EmploymentStatusNotNullNotNullable | Enable server-side filtering of the `employment_status` attribute. Will only include individuals with that attribute explicitly set (ie if an individuals has a `null`, it will not be returned if this parameter is set)  (optional)
 
     # example passing only required values which don't have defaults set
     # and optional values
@@ -152,7 +152,7 @@ with openapi_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **employment_status** | **EmploymentStatusNotNull**| Enable server-side filtering of the &#x60;employment_status&#x60; attribute. Will only include individuals with that attribute explicitly set (ie if an individuals has a &#x60;null&#x60;, it will not be returned if this parameter is set)  | [optional]
+ **employment_status** | **EmploymentStatusNotNullNotNullable**| Enable server-side filtering of the &#x60;employment_status&#x60; attribute. Will only include individuals with that attribute explicitly set (ie if an individuals has a &#x60;null&#x60;, it will not be returned if this parameter is set)  | [optional]
 
 ### Return type
 

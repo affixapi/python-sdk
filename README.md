@@ -258,7 +258,7 @@ from pprint import pprint
 from openapi_client.api import 2023_03_01_api
 from openapi_client.model.companies20230301_response import Companies20230301Response
 from openapi_client.model.employees20230301_response import Employees20230301Response
-from openapi_client.model.employment_status_not_null import EmploymentStatusNotNull
+from openapi_client.model.employment_status_not_null_not_nullable import EmploymentStatusNotNullNotNullable
 from openapi_client.model.groups20230301_response import Groups20230301Response
 from openapi_client.model.identity_response import IdentityResponse
 from openapi_client.model.inline_response401 import InlineResponse401
@@ -356,8 +356,7 @@ Class | Method | HTTP request | Description
  - [Employees20230301Response](docs/Employees20230301Response.md)
  - [EmploymentNoNullEnumRequest](docs/EmploymentNoNullEnumRequest.md)
  - [EmploymentResponse](docs/EmploymentResponse.md)
- - [EmploymentStatus](docs/EmploymentStatus.md)
- - [EmploymentStatusNotNull](docs/EmploymentStatusNotNull.md)
+ - [EmploymentStatusNotNullNotNullable](docs/EmploymentStatusNotNullNotNullable.md)
  - [EmploymentStatusNotNullRequest](docs/EmploymentStatusNotNullRequest.md)
  - [EmploymentStatusResponse](docs/EmploymentStatusResponse.md)
  - [GroupNoNullEnumRequest](docs/GroupNoNullEnumRequest.md)

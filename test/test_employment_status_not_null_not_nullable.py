@@ -13,11 +13,11 @@ import sys
 import unittest
 
 import openapi_client
-from openapi_client.model.employment_status_not_null import EmploymentStatusNotNull
+from openapi_client.model.employment_status_not_null_not_nullable import EmploymentStatusNotNullNotNullable
 
 
-class TestEmploymentStatusNotNull(unittest.TestCase):
-    """EmploymentStatusNotNull unit test stubs"""
+class TestEmploymentStatusNotNullNotNullable(unittest.TestCase):
+    """EmploymentStatusNotNullNotNullable unit test stubs"""
 
     def setUp(self):
         pass
@@ -25,10 +25,10 @@ class TestEmploymentStatusNotNull(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def testEmploymentStatusNotNull(self):
-        """Test EmploymentStatusNotNull"""
+    def testEmploymentStatusNotNullNotNullable(self):
+        """Test EmploymentStatusNotNullNotNullable"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = EmploymentStatusNotNull()  # noqa: E501
+        # model = EmploymentStatusNotNullNotNullable()  # noqa: E501
         pass
 
 
