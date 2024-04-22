@@ -20,7 +20,7 @@ Name | Type | Description | Notes
 **ethnicity** | **str, none_type** |  | 
 **marital_status** | **str, none_type** | &#x60;other&#x60; option can include co-habitating, civil partnership, separated, divorced, widowed, etc  | 
 **date_of_birth** | **date, none_type** |  | 
-**employment_status** | **str, none_type** |  | 
+**employment_status** | [**EmploymentStatusResponse**](EmploymentStatusResponse.md) |  | 
 **employment_type** | **str, none_type** |  | 
 **start_date** | **date, none_type** |  | 
 **remote_created_at** | **date, none_type** |  | [readonly] 
@@ -33,6 +33,8 @@ Name | Type | Description | Notes
 **employments** | [**[EmploymentResponse], none_type**](EmploymentResponse.md) |  | 
 **custom_fields** | **{str: (bool, date, datetime, dict, float, int, list, str, none_type)}, none_type** |  | 
 **groups** | [**Groups20230301Response**](Groups20230301Response.md) |  | 
+**dependents** | [**[CreateEmployeeRequestDependents], none_type**](CreateEmployeeRequestDependents.md) |  | 
+**emergency_contacts** | [**[CreateEmployeeRequestEmergencyContacts], none_type**](CreateEmployeeRequestEmergencyContacts.md) |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -18,7 +18,7 @@ Name | Type | Description | Notes
 **ethnicity** | **str, none_type** |  | [optional] 
 **marital_status** | **str, none_type** |  | [optional] 
 **date_of_birth** | **date, none_type** |  | [optional] 
-**employment_status** | **str, none_type** |  | [optional] 
+**employment_status** | [**EmploymentStatusNotNullRequest**](EmploymentStatusNotNullRequest.md) |  | [optional] 
 **employment_type** | **str, none_type** |  | [optional] 
 **start_date** | **date, none_type** |  | [optional] 
 **termination_date** | **date, none_type** |  | [optional] 
@@ -30,6 +30,8 @@ Name | Type | Description | Notes
 **employments** | [**[EmploymentNoNullEnumRequest], none_type**](EmploymentNoNullEnumRequest.md) |  | [optional] 
 **custom_fields** | **{str: (bool, date, datetime, dict, float, int, list, str, none_type)}, none_type** |  | [optional] 
 **groups** | [**GroupsNoNullEnumRequest**](GroupsNoNullEnumRequest.md) |  | [optional] 
+**dependents** | [**[CreateEmployeeRequestDependents], none_type**](CreateEmployeeRequestDependents.md) |  | [optional] 
+**emergency_contacts** | [**[CreateEmployeeRequestEmergencyContacts], none_type**](CreateEmployeeRequestEmergencyContacts.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

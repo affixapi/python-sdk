@@ -30,14 +30,20 @@ from openapi_client.model_utils import (  # noqa: F401
 def lazy_import():
     from openapi_client.model.address_no_non_null_request import AddressNoNonNullRequest
     from openapi_client.model.create_employee_request_bank_account import CreateEmployeeRequestBankAccount
+    from openapi_client.model.create_employee_request_dependents import CreateEmployeeRequestDependents
+    from openapi_client.model.create_employee_request_emergency_contacts import CreateEmployeeRequestEmergencyContacts
     from openapi_client.model.create_employee_request_manager import CreateEmployeeRequestManager
     from openapi_client.model.employment_no_null_enum_request import EmploymentNoNullEnumRequest
+    from openapi_client.model.employment_status_not_null_request import EmploymentStatusNotNullRequest
     from openapi_client.model.groups_no_null_enum_request import GroupsNoNullEnumRequest
     from openapi_client.model.location_no_non_null_request import LocationNoNonNullRequest
     globals()['AddressNoNonNullRequest'] = AddressNoNonNullRequest
     globals()['CreateEmployeeRequestBankAccount'] = CreateEmployeeRequestBankAccount
+    globals()['CreateEmployeeRequestDependents'] = CreateEmployeeRequestDependents
+    globals()['CreateEmployeeRequestEmergencyContacts'] = CreateEmployeeRequestEmergencyContacts
     globals()['CreateEmployeeRequestManager'] = CreateEmployeeRequestManager
     globals()['EmploymentNoNullEnumRequest'] = EmploymentNoNullEnumRequest
+    globals()['EmploymentStatusNotNullRequest'] = EmploymentStatusNotNullRequest
     globals()['GroupsNoNullEnumRequest'] = GroupsNoNullEnumRequest
     globals()['LocationNoNonNullRequest'] = LocationNoNonNullRequest
 
@@ -89,13 +95,6 @@ class CreateEmployeeRequest(ModelNormal):
             'MARRIED': "married",
             'NOT_SPECIFIED': "not_specified",
         },
-        ('employment_status',): {
-            'None': None,
-            'ACTIVE': "active",
-            'INACTIVE': "inactive",
-            'PENDING': "pending",
-            'LEAVE': "leave",
-        },
         ('employment_type',): {
             'None': None,
             'FULL_TIME': "full_time",
@@ -138,7 +137,7 @@ class CreateEmployeeRequest(ModelNormal):
             'ethnicity': (str, none_type,),  # noqa: E501
             'marital_status': (str, none_type,),  # noqa: E501
             'date_of_birth': (date, none_type,),  # noqa: E501
-            'employment_status': (str, none_type,),  # noqa: E501
+            'employment_status': (EmploymentStatusNotNullRequest,),  # noqa: E501
             'employment_type': (str, none_type,),  # noqa: E501
             'start_date': (date, none_type,),  # noqa: E501
             'termination_date': (date, none_type,),  # noqa: E501
@@ -150,6 +149,8 @@ class CreateEmployeeRequest(ModelNormal):
             'employments': ([EmploymentNoNullEnumRequest], none_type,),  # noqa: E501
             'custom_fields': ({str: (bool, date, datetime, dict, float, int, list, str, none_type)}, none_type,),  # noqa: E501
             'groups': (GroupsNoNullEnumRequest,),  # noqa: E501
+            'dependents': ([CreateEmployeeRequestDependents], none_type,),  # noqa: E501
+            'emergency_contacts': ([CreateEmployeeRequestEmergencyContacts], none_type,),  # noqa: E501
         }
 
     @cached_property
@@ -184,6 +185,8 @@ class CreateEmployeeRequest(ModelNormal):
         'employments': 'employments',  # noqa: E501
         'custom_fields': 'custom_fields',  # noqa: E501
         'groups': 'groups',  # noqa: E501
+        'dependents': 'dependents',  # noqa: E501
+        'emergency_contacts': 'emergency_contacts',  # noqa: E501
     }
 
     _composed_schemas = {}
@@ -248,7 +251,7 @@ class CreateEmployeeRequest(ModelNormal):
             ethnicity (str, none_type): [optional]  # noqa: E501
             marital_status (str, none_type): [optional]  # noqa: E501
             date_of_birth (date, none_type): [optional]  # noqa: E501
-            employment_status (str, none_type): [optional]  # noqa: E501
+            employment_status (EmploymentStatusNotNullRequest): [optional]  # noqa: E501
             employment_type (str, none_type): [optional]  # noqa: E501
             start_date (date, none_type): [optional]  # noqa: E501
             termination_date (date, none_type): [optional]  # noqa: E501
@@ -260,6 +263,8 @@ class CreateEmployeeRequest(ModelNormal):
             employments ([EmploymentNoNullEnumRequest], none_type): [optional]  # noqa: E501
             custom_fields ({str: (bool, date, datetime, dict, float, int, list, str, none_type)}, none_type): [optional]  # noqa: E501
             groups (GroupsNoNullEnumRequest): [optional]  # noqa: E501
+            dependents ([CreateEmployeeRequestDependents], none_type): [optional]  # noqa: E501
+            emergency_contacts ([CreateEmployeeRequestEmergencyContacts], none_type): [optional]  # noqa: E501
         """
 
         _check_type = kwargs.pop('_check_type', True)

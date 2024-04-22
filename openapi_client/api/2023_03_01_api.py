@@ -24,6 +24,7 @@ from openapi_client.model_utils import (  # noqa: F401
 )
 from openapi_client.model.companies20230301_response import Companies20230301Response
 from openapi_client.model.employees20230301_response import Employees20230301Response
+from openapi_client.model.employment_status import EmploymentStatus
 from openapi_client.model.groups20230301_response import Groups20230301Response
 from openapi_client.model.identity_response import IdentityResponse
 from openapi_client.model.inline_response401 import InlineResponse401
@@ -170,6 +171,7 @@ class 20230301Api(object):
 
 
             Keyword Args:
+                employment_status (EmploymentStatus): Enable server-side filtering of the `employment_status` attribute . [optional]
                 _return_http_data_only (bool): response data without head status
                     code and headers. Default is True.
                 _preload_content (bool): if False, the urllib3.HTTPResponse object
@@ -229,6 +231,7 @@ class 20230301Api(object):
             },
             params_map={
                 'all': [
+                    'employment_status',
                 ],
                 'required': [],
                 'nullable': [
@@ -244,10 +247,14 @@ class 20230301Api(object):
                 'allowed_values': {
                 },
                 'openapi_types': {
+                    'employment_status':
+                        (EmploymentStatus,),
                 },
                 'attribute_map': {
+                    'employment_status': 'employment_status',
                 },
                 'location_map': {
+                    'employment_status': 'query',
                 },
                 'collection_format_map': {
                 }

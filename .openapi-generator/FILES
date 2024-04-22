@@ -13,6 +13,8 @@ docs/CompanyResponse.md
 docs/CoreApi.md
 docs/CreateEmployeeRequest.md
 docs/CreateEmployeeRequestBankAccount.md
+docs/CreateEmployeeRequestDependents.md
+docs/CreateEmployeeRequestEmergencyContacts.md
 docs/CreateEmployeeRequestManager.md
 docs/CurrencyNotNullRequest.md
 docs/CurrencyResponse.md
@@ -22,6 +24,9 @@ docs/EmployeeResponseManager.md
 docs/Employees20230301Response.md
 docs/EmploymentNoNullEnumRequest.md
 docs/EmploymentResponse.md
+docs/EmploymentStatus.md
+docs/EmploymentStatusNotNullRequest.md
+docs/EmploymentStatusResponse.md
 docs/GroupNoNullEnumRequest.md
 docs/GroupResponse.md
 docs/Groups20230301Response.md
@@ -82,6 +87,8 @@ openapi_client/model/companies20230301_response.py
 openapi_client/model/company_response.py
 openapi_client/model/create_employee_request.py
 openapi_client/model/create_employee_request_bank_account.py
+openapi_client/model/create_employee_request_dependents.py
+openapi_client/model/create_employee_request_emergency_contacts.py
 openapi_client/model/create_employee_request_manager.py
 openapi_client/model/currency_not_null_request.py
 openapi_client/model/currency_response.py
@@ -91,6 +98,9 @@ openapi_client/model/employee_response_manager.py
 openapi_client/model/employees20230301_response.py
 openapi_client/model/employment_no_null_enum_request.py
 openapi_client/model/employment_response.py
+openapi_client/model/employment_status.py
+openapi_client/model/employment_status_not_null_request.py
+openapi_client/model/employment_status_response.py
 openapi_client/model/group_no_null_enum_request.py
 openapi_client/model/group_response.py
 openapi_client/model/groups20230301_response.py
@@ -147,6 +157,8 @@ test/test_company_response.py
 test/test_core_api.py
 test/test_create_employee_request.py
 test/test_create_employee_request_bank_account.py
+test/test_create_employee_request_dependents.py
+test/test_create_employee_request_emergency_contacts.py
 test/test_create_employee_request_manager.py
 test/test_currency_not_null_request.py
 test/test_currency_response.py
@@ -156,6 +168,9 @@ test/test_employee_response_manager.py
 test/test_employees20230301_response.py
 test/test_employment_no_null_enum_request.py
 test/test_employment_response.py
+test/test_employment_status.py
+test/test_employment_status_not_null_request.py
+test/test_employment_status_response.py
 test/test_group_no_null_enum_request.py
 test/test_group_response.py
 test/test_groups20230301_response.py
