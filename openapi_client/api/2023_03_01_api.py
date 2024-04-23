@@ -171,7 +171,7 @@ class 20230301Api(object):
 
 
             Keyword Args:
-                employment_status (EmploymentStatusNotNullNotNullable): Enable server-side filtering of the `employment_status` attribute. Will only include individuals with that attribute explicitly set (ie if an individuals has a `null`, it will not be returned if this parameter is set) . [optional]
+                employment_status (EmploymentStatusNotNullNotNullable): Optional query parameter. Use to enable server-side filtering of the `employment_status` attribute. Will only include individuals with that attribute explicitly set (ie if an individuals has a `null`, it will not be returned if this parameter is set) . [optional]
                 _return_http_data_only (bool): response data without head status
                     code and headers. Default is True.
                 _preload_content (bool): if False, the urllib3.HTTPResponse object
