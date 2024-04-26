@@ -840,6 +840,8 @@ class XHRVerticallyIntegratedApi(object):
 
         def __xhr_time_off_entries20230301(
             self,
+            start_date,
+            end_date,
             **kwargs
         ):
             """Time off entries  # noqa: E501
@@ -848,9 +850,12 @@ class XHRVerticallyIntegratedApi(object):
             This method makes a synchronous HTTP request by default. To make an
             asynchronous HTTP request, please pass async_req=True
 
-            >>> thread = api.xhr_time_off_entries20230301(async_req=True)
+            >>> thread = api.xhr_time_off_entries20230301(start_date, end_date, async_req=True)
             >>> result = thread.get()
 
+            Args:
+                start_date (date): The start date of the search period
+                end_date (date): The end date of the search period
 
             Keyword Args:
                 _return_http_data_only (bool): response data without head status
@@ -897,6 +902,10 @@ class XHRVerticallyIntegratedApi(object):
                 '_check_return_type', True
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
+            kwargs['start_date'] = \
+                start_date
+            kwargs['end_date'] = \
+                end_date
             return self.call_with_http_info(**kwargs)
 
         self.xhr_time_off_entries20230301 = _Endpoint(
@@ -912,8 +921,13 @@ class XHRVerticallyIntegratedApi(object):
             },
             params_map={
                 'all': [
+                    'start_date',
+                    'end_date',
                 ],
-                'required': [],
+                'required': [
+                    'start_date',
+                    'end_date',
+                ],
                 'nullable': [
                 ],
                 'enum': [
@@ -927,10 +941,18 @@ class XHRVerticallyIntegratedApi(object):
                 'allowed_values': {
                 },
                 'openapi_types': {
+                    'start_date':
+                        (date,),
+                    'end_date':
+                        (date,),
                 },
                 'attribute_map': {
+                    'start_date': 'start_date',
+                    'end_date': 'end_date',
                 },
                 'location_map': {
+                    'start_date': 'query',
+                    'end_date': 'query',
                 },
                 'collection_format_map': {
                 }
@@ -947,6 +969,8 @@ class XHRVerticallyIntegratedApi(object):
 
         def __xhr_timesheets20230301(
             self,
+            start_date,
+            end_date,
             **kwargs
         ):
             """Timesheets  # noqa: E501
@@ -955,9 +979,12 @@ class XHRVerticallyIntegratedApi(object):
             This method makes a synchronous HTTP request by default. To make an
             asynchronous HTTP request, please pass async_req=True
 
-            >>> thread = api.xhr_timesheets20230301(async_req=True)
+            >>> thread = api.xhr_timesheets20230301(start_date, end_date, async_req=True)
             >>> result = thread.get()
 
+            Args:
+                start_date (date): The start date of the search period
+                end_date (date): The end date of the search period
 
             Keyword Args:
                 _return_http_data_only (bool): response data without head status
@@ -1004,6 +1031,10 @@ class XHRVerticallyIntegratedApi(object):
                 '_check_return_type', True
             )
             kwargs['_host_index'] = kwargs.get('_host_index')
+            kwargs['start_date'] = \
+                start_date
+            kwargs['end_date'] = \
+                end_date
             return self.call_with_http_info(**kwargs)
 
         self.xhr_timesheets20230301 = _Endpoint(
@@ -1019,8 +1050,13 @@ class XHRVerticallyIntegratedApi(object):
             },
             params_map={
                 'all': [
+                    'start_date',
+                    'end_date',
                 ],
-                'required': [],
+                'required': [
+                    'start_date',
+                    'end_date',
+                ],
                 'nullable': [
                 ],
                 'enum': [
@@ -1034,10 +1070,18 @@ class XHRVerticallyIntegratedApi(object):
                 'allowed_values': {
                 },
                 'openapi_types': {
+                    'start_date':
+                        (date,),
+                    'end_date':
+                        (date,),
                 },
                 'attribute_map': {
+                    'start_date': 'start_date',
+                    'end_date': 'end_date',
                 },
                 'location_map': {
+                    'start_date': 'query',
+                    'end_date': 'query',
                 },
                 'collection_format_map': {
                 }
