@@ -79,6 +79,7 @@ class TimesheetResponse(ModelNormal):
             'id': (str,),  # noqa: E501
             'remote_id': (str,),  # noqa: E501
             'employee_id': (str,),  # noqa: E501
+            'remote_employee_id': (str,),  # noqa: E501
             'start_time': (datetime, none_type,),  # noqa: E501
             'end_time': (datetime, none_type,),  # noqa: E501
             'hours_worked': (float,),  # noqa: E501
@@ -95,6 +96,7 @@ class TimesheetResponse(ModelNormal):
         'id': 'id',  # noqa: E501
         'remote_id': 'remote_id',  # noqa: E501
         'employee_id': 'employee_id',  # noqa: E501
+        'remote_employee_id': 'remote_employee_id',  # noqa: E501
         'start_time': 'start_time',  # noqa: E501
         'end_time': 'end_time',  # noqa: E501
         'hours_worked': 'hours_worked',  # noqa: E501
@@ -114,13 +116,14 @@ class TimesheetResponse(ModelNormal):
     ])
 
     @convert_js_args_to_python_args
-    def __init__(self, id, remote_id, employee_id, start_time, end_time, hours_worked, remote_created_at, remote_modified_at, *args, **kwargs):  # noqa: E501
+    def __init__(self, id, remote_id, employee_id, remote_employee_id, start_time, end_time, hours_worked, remote_created_at, remote_modified_at, *args, **kwargs):  # noqa: E501
         """TimesheetResponse - a model defined in OpenAPI
 
         Args:
             id (str): The Affix-assigned id of the time off entry
             remote_id (str): the remote system-assigned id of the time off entry
             employee_id (str): the Affix-assigned id of the individual
+            remote_employee_id (str): the remote system-assigned id of the individual
             start_time (datetime, none_type):
             end_time (datetime, none_type):
             hours_worked (float):
@@ -186,6 +189,7 @@ class TimesheetResponse(ModelNormal):
         self.id = id
         self.remote_id = remote_id
         self.employee_id = employee_id
+        self.remote_employee_id = remote_employee_id
         self.start_time = start_time
         self.end_time = end_time
         self.hours_worked = hours_worked

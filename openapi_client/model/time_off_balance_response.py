@@ -84,7 +84,7 @@ class TimeOffBalanceResponse(ModelNormal):
         """
         return {
             'employee_id': (str,),  # noqa: E501
-            'remote_id': (str,),  # noqa: E501
+            'remote_employee_id': (str,),  # noqa: E501
             'balance': (float, none_type,),  # noqa: E501
             'used': (float, none_type,),  # noqa: E501
             'policy_name': (str, none_type,),  # noqa: E501
@@ -100,7 +100,7 @@ class TimeOffBalanceResponse(ModelNormal):
 
     attribute_map = {
         'employee_id': 'employee_id',  # noqa: E501
-        'remote_id': 'remote_id',  # noqa: E501
+        'remote_employee_id': 'remote_employee_id',  # noqa: E501
         'balance': 'balance',  # noqa: E501
         'used': 'used',  # noqa: E501
         'policy_name': 'policy_name',  # noqa: E501
@@ -121,12 +121,12 @@ class TimeOffBalanceResponse(ModelNormal):
     ])
 
     @convert_js_args_to_python_args
-    def __init__(self, employee_id, remote_id, balance, used, policy_name, policy_type, remote_created_at, remote_modified_at, *args, **kwargs):  # noqa: E501
+    def __init__(self, employee_id, remote_employee_id, balance, used, policy_name, policy_type, remote_created_at, remote_modified_at, *args, **kwargs):  # noqa: E501
         """TimeOffBalanceResponse - a model defined in OpenAPI
 
         Args:
             employee_id (str): The Affix-assigned id of the individual
-            remote_id (str): the remote system-assigned id of the individual
+            remote_employee_id (str): the remote system-assigned id of the individual
             balance (float, none_type):
             used (float, none_type):
             policy_name (str, none_type): The name of the policy, as assigned by the remote system
@@ -191,7 +191,7 @@ class TimeOffBalanceResponse(ModelNormal):
         self._visited_composed_classes = _visited_composed_classes + (self.__class__,)
 
         self.employee_id = employee_id
-        self.remote_id = remote_id
+        self.remote_employee_id = remote_employee_id
         self.balance = balance
         self.used = used
         self.policy_name = policy_name

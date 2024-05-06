@@ -92,6 +92,7 @@ class TimeOffEntryResponse(ModelNormal):
             'id': (str,),  # noqa: E501
             'remote_id': (str,),  # noqa: E501
             'employee_id': (str,),  # noqa: E501
+            'remote_employee_id': (str,),  # noqa: E501
             'start_date': (date, none_type,),  # noqa: E501
             'end_date': (date, none_type,),  # noqa: E501
             'amount': (float,),  # noqa: E501
@@ -112,6 +113,7 @@ class TimeOffEntryResponse(ModelNormal):
         'id': 'id',  # noqa: E501
         'remote_id': 'remote_id',  # noqa: E501
         'employee_id': 'employee_id',  # noqa: E501
+        'remote_employee_id': 'remote_employee_id',  # noqa: E501
         'start_date': 'start_date',  # noqa: E501
         'end_date': 'end_date',  # noqa: E501
         'amount': 'amount',  # noqa: E501
@@ -135,13 +137,14 @@ class TimeOffEntryResponse(ModelNormal):
     ])
 
     @convert_js_args_to_python_args
-    def __init__(self, id, remote_id, employee_id, start_date, end_date, amount, unit, status, employee_note, request_type, remote_created_at, remote_modified_at, *args, **kwargs):  # noqa: E501
+    def __init__(self, id, remote_id, employee_id, remote_employee_id, start_date, end_date, amount, unit, status, employee_note, request_type, remote_created_at, remote_modified_at, *args, **kwargs):  # noqa: E501
         """TimeOffEntryResponse - a model defined in OpenAPI
 
         Args:
             id (str): The Affix-assigned id of the time off entry
             remote_id (str): the remote system-assigned id of the time off entry
             employee_id (str): the Affix-assigned id of the individual
+            remote_employee_id (str): the remote system-assigned id of the individual
             start_date (date, none_type):
             end_date (date, none_type):
             amount (float):
@@ -211,6 +214,7 @@ class TimeOffEntryResponse(ModelNormal):
         self.id = id
         self.remote_id = remote_id
         self.employee_id = employee_id
+        self.remote_employee_id = remote_employee_id
         self.start_date = start_date
         self.end_date = end_date
         self.amount = amount

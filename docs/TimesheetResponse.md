@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 **id** | **str** | The Affix-assigned id of the time off entry | 
 **remote_id** | **str** | the remote system-assigned id of the time off entry | 
 **employee_id** | **str** | the Affix-assigned id of the individual | 
+**remote_employee_id** | **str** | the remote system-assigned id of the individual | 
 **start_time** | **datetime, none_type** |  | 
 **end_time** | **datetime, none_type** |  | 
 **hours_worked** | **float** |  | 
