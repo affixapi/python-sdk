@@ -13,6 +13,8 @@ import sys
 import unittest
 
 import openapi_client
+from openapi_client.model.policy_type_response import PolicyTypeResponse
+globals()['PolicyTypeResponse'] = PolicyTypeResponse
 from openapi_client.model.time_off_balance_response import TimeOffBalanceResponse
 
 

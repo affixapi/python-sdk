@@ -382,6 +382,7 @@ Class | Method | HTTP request | Description
  - [PayslipResponseEarnings](docs/PayslipResponseEarnings.md)
  - [PayslipResponseTaxes](docs/PayslipResponseTaxes.md)
  - [Payslips20230301Response](docs/Payslips20230301Response.md)
+ - [PolicyTypeResponse](docs/PolicyTypeResponse.md)
  - [ProviderRequest](docs/ProviderRequest.md)
  - [ProviderResponse](docs/ProviderResponse.md)
  - [ProvidersResponse](docs/ProvidersResponse.md)

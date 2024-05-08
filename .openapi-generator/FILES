@@ -51,6 +51,7 @@ docs/PayslipResponseDeductions.md
 docs/PayslipResponseEarnings.md
 docs/PayslipResponseTaxes.md
 docs/Payslips20230301Response.md
+docs/PolicyTypeResponse.md
 docs/ProviderRequest.md
 docs/ProviderResponse.md
 docs/ProvidersResponse.md
@@ -124,6 +125,7 @@ openapi_client/model/payslip_response_deductions.py
 openapi_client/model/payslip_response_earnings.py
 openapi_client/model/payslip_response_taxes.py
 openapi_client/model/payslips20230301_response.py
+openapi_client/model/policy_type_response.py
 openapi_client/model/provider_request.py
 openapi_client/model/provider_response.py
 openapi_client/model/providers_response.py
@@ -195,6 +197,7 @@ test/test_payslip_response_deductions.py
 test/test_payslip_response_earnings.py
 test/test_payslip_response_taxes.py
 test/test_payslips20230301_response.py
+test/test_policy_type_response.py
 test/test_provider_request.py
 test/test_provider_response.py
 test/test_providers_response.py

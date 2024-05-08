@@ -54,6 +54,7 @@ from openapi_client.model.payslip_response_deductions import PayslipResponseDedu
 from openapi_client.model.payslip_response_earnings import PayslipResponseEarnings
 from openapi_client.model.payslip_response_taxes import PayslipResponseTaxes
 from openapi_client.model.payslips20230301_response import Payslips20230301Response
+from openapi_client.model.policy_type_response import PolicyTypeResponse
 from openapi_client.model.provider_request import ProviderRequest
 from openapi_client.model.provider_response import ProviderResponse
 from openapi_client.model.providers_response import ProvidersResponse
