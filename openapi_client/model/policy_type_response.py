@@ -52,13 +52,13 @@ class PolicyTypeResponse(ModelSimple):
         ('value',): {
             'None': None,
             'NULL': "null",
-            'VACATION': "vacation",
-            'HOLIDAY': "holiday",
-            'SICK': "sick",
-            'PERSONAL': "personal",
-            'JURY_DUTY': "jury_duty",
-            'VOLUNTEER': "volunteer",
             'BEREAVEMENT': "bereavement",
+            'HOLIDAY': "holiday",
+            'JURY_DUTY': "jury_duty",
+            'PERSONAL': "personal",
+            'SICK': "sick",
+            'VACATION': "vacation",
+            'VOLUNTEER': "volunteer",
         },
     }
 
@@ -108,10 +108,10 @@ class PolicyTypeResponse(ModelSimple):
         Note that value can be passed either in args or in kwargs, but not in both.
 
         Args:
-            args[0] (str):, must be one of ["null", "vacation", "holiday", "sick", "personal", "jury_duty", "volunteer", "bereavement", ]  # noqa: E501
+            args[0] (str):, must be one of ["null", "bereavement", "holiday", "jury_duty", "personal", "sick", "vacation", "volunteer", ]  # noqa: E501
 
         Keyword Args:
-            value (str):, must be one of ["null", "vacation", "holiday", "sick", "personal", "jury_duty", "volunteer", "bereavement", ]  # noqa: E501
+            value (str):, must be one of ["null", "bereavement", "holiday", "jury_duty", "personal", "sick", "vacation", "volunteer", ]  # noqa: E501
             _check_type (bool): if True, values for parameters in openapi_types
                                 will be type checked and a TypeError will be
                                 raised if the wrong type is input.

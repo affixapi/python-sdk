@@ -69,7 +69,6 @@ class AddressResponse(ModelNormal):
             'CL': "CL",
             'PE': "PE",
             'AT': "AT",
-            'AU': "AU",
             'BE': "BE",
             'CH': "CH",
             'CY': "CY",
