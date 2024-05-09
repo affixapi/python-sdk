@@ -14,20 +14,22 @@ import unittest
 
 import openapi_client
 from openapi_client.model.address_no_non_null_request import AddressNoNonNullRequest
+from openapi_client.model.compensation_history_no_non_null_request import CompensationHistoryNoNonNullRequest
 from openapi_client.model.create_employee_request_bank_account import CreateEmployeeRequestBankAccount
 from openapi_client.model.create_employee_request_dependents import CreateEmployeeRequestDependents
 from openapi_client.model.create_employee_request_emergency_contacts import CreateEmployeeRequestEmergencyContacts
 from openapi_client.model.create_employee_request_manager import CreateEmployeeRequestManager
-from openapi_client.model.employment_no_null_enum_request import EmploymentNoNullEnumRequest
+from openapi_client.model.employment_history_no_non_null_request import EmploymentHistoryNoNonNullRequest
 from openapi_client.model.employment_status_not_null_request import EmploymentStatusNotNullRequest
 from openapi_client.model.groups_no_null_enum_request import GroupsNoNullEnumRequest
 from openapi_client.model.location_no_non_null_request import LocationNoNonNullRequest
 globals()['AddressNoNonNullRequest'] = AddressNoNonNullRequest
+globals()['CompensationHistoryNoNonNullRequest'] = CompensationHistoryNoNonNullRequest
 globals()['CreateEmployeeRequestBankAccount'] = CreateEmployeeRequestBankAccount
 globals()['CreateEmployeeRequestDependents'] = CreateEmployeeRequestDependents
 globals()['CreateEmployeeRequestEmergencyContacts'] = CreateEmployeeRequestEmergencyContacts
 globals()['CreateEmployeeRequestManager'] = CreateEmployeeRequestManager
-globals()['EmploymentNoNullEnumRequest'] = EmploymentNoNullEnumRequest
+globals()['EmploymentHistoryNoNonNullRequest'] = EmploymentHistoryNoNonNullRequest
 globals()['EmploymentStatusNotNullRequest'] = EmploymentStatusNotNullRequest
 globals()['GroupsNoNullEnumRequest'] = GroupsNoNullEnumRequest
 globals()['LocationNoNonNullRequest'] = LocationNoNonNullRequest

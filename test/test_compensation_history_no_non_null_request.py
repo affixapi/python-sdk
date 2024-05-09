@@ -13,11 +13,13 @@ import sys
 import unittest
 
 import openapi_client
-from openapi_client.model.currency_not_null_request import CurrencyNotNullRequest
+from openapi_client.model.currency_request import CurrencyRequest
+globals()['CurrencyRequest'] = CurrencyRequest
+from openapi_client.model.compensation_history_no_non_null_request import CompensationHistoryNoNonNullRequest
 
 
-class TestCurrencyNotNullRequest(unittest.TestCase):
-    """CurrencyNotNullRequest unit test stubs"""
+class TestCompensationHistoryNoNonNullRequest(unittest.TestCase):
+    """CompensationHistoryNoNonNullRequest unit test stubs"""
 
     def setUp(self):
         pass
@@ -25,10 +27,10 @@ class TestCurrencyNotNullRequest(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def testCurrencyNotNullRequest(self):
-        """Test CurrencyNotNullRequest"""
+    def testCompensationHistoryNoNonNullRequest(self):
+        """Test CompensationHistoryNoNonNullRequest"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = CurrencyNotNullRequest()  # noqa: E501
+        # model = CompensationHistoryNoNonNullRequest()  # noqa: E501
         pass
 
 

@@ -29,20 +29,22 @@ from openapi_client.model_utils import (  # noqa: F401
 
 def lazy_import():
     from openapi_client.model.address_no_non_null_request import AddressNoNonNullRequest
+    from openapi_client.model.compensation_history_no_non_null_request import CompensationHistoryNoNonNullRequest
     from openapi_client.model.create_employee_request_bank_account import CreateEmployeeRequestBankAccount
     from openapi_client.model.create_employee_request_dependents import CreateEmployeeRequestDependents
     from openapi_client.model.create_employee_request_emergency_contacts import CreateEmployeeRequestEmergencyContacts
     from openapi_client.model.create_employee_request_manager import CreateEmployeeRequestManager
-    from openapi_client.model.employment_no_null_enum_request import EmploymentNoNullEnumRequest
+    from openapi_client.model.employment_history_no_non_null_request import EmploymentHistoryNoNonNullRequest
     from openapi_client.model.employment_status_not_null_request import EmploymentStatusNotNullRequest
     from openapi_client.model.groups_no_null_enum_request import GroupsNoNullEnumRequest
     from openapi_client.model.location_no_non_null_request import LocationNoNonNullRequest
     globals()['AddressNoNonNullRequest'] = AddressNoNonNullRequest
+    globals()['CompensationHistoryNoNonNullRequest'] = CompensationHistoryNoNonNullRequest
     globals()['CreateEmployeeRequestBankAccount'] = CreateEmployeeRequestBankAccount
     globals()['CreateEmployeeRequestDependents'] = CreateEmployeeRequestDependents
     globals()['CreateEmployeeRequestEmergencyContacts'] = CreateEmployeeRequestEmergencyContacts
     globals()['CreateEmployeeRequestManager'] = CreateEmployeeRequestManager
-    globals()['EmploymentNoNullEnumRequest'] = EmploymentNoNullEnumRequest
+    globals()['EmploymentHistoryNoNonNullRequest'] = EmploymentHistoryNoNonNullRequest
     globals()['EmploymentStatusNotNullRequest'] = EmploymentStatusNotNullRequest
     globals()['GroupsNoNullEnumRequest'] = GroupsNoNullEnumRequest
     globals()['LocationNoNonNullRequest'] = LocationNoNonNullRequest
@@ -146,7 +148,8 @@ class CreateEmployeeRequest(ModelNormal):
             'work_location': (LocationNoNonNullRequest,),  # noqa: E501
             'manager': (CreateEmployeeRequestManager,),  # noqa: E501
             'bank_account': (CreateEmployeeRequestBankAccount,),  # noqa: E501
-            'employments': ([EmploymentNoNullEnumRequest], none_type,),  # noqa: E501
+            'employment_history': ([EmploymentHistoryNoNonNullRequest], none_type,),  # noqa: E501
+            'compensation_history': ([CompensationHistoryNoNonNullRequest], none_type,),  # noqa: E501
             'custom_fields': ({str: (bool, date, datetime, dict, float, int, list, str, none_type)}, none_type,),  # noqa: E501
             'groups': (GroupsNoNullEnumRequest,),  # noqa: E501
             'dependents': ([CreateEmployeeRequestDependents], none_type,),  # noqa: E501
@@ -182,7 +185,8 @@ class CreateEmployeeRequest(ModelNormal):
         'work_location': 'work_location',  # noqa: E501
         'manager': 'manager',  # noqa: E501
         'bank_account': 'bank_account',  # noqa: E501
-        'employments': 'employments',  # noqa: E501
+        'employment_history': 'employment_history',  # noqa: E501
+        'compensation_history': 'compensation_history',  # noqa: E501
         'custom_fields': 'custom_fields',  # noqa: E501
         'groups': 'groups',  # noqa: E501
         'dependents': 'dependents',  # noqa: E501
@@ -260,7 +264,8 @@ class CreateEmployeeRequest(ModelNormal):
             work_location (LocationNoNonNullRequest): [optional]  # noqa: E501
             manager (CreateEmployeeRequestManager): [optional]  # noqa: E501
             bank_account (CreateEmployeeRequestBankAccount): [optional]  # noqa: E501
-            employments ([EmploymentNoNullEnumRequest], none_type): [optional]  # noqa: E501
+            employment_history ([EmploymentHistoryNoNonNullRequest], none_type): [optional]  # noqa: E501
+            compensation_history ([CompensationHistoryNoNonNullRequest], none_type): [optional]  # noqa: E501
             custom_fields ({str: (bool, date, datetime, dict, float, int, list, str, none_type)}, none_type): [optional]  # noqa: E501
             groups (GroupsNoNullEnumRequest): [optional]  # noqa: E501
             dependents ([CreateEmployeeRequestDependents], none_type): [optional]  # noqa: E501

@@ -1,10 +1,9 @@
-# EmploymentResponse
+# CompensationHistoryResponse
 
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**job_title** | **str, none_type** |  | 
 **pay_rate** | **float, none_type** |  | 
 **pay_period** | **str, none_type** |  | 
 **pay_frequency** | **str, none_type** |  | 

@@ -30,7 +30,8 @@ Name | Type | Description | Notes
 **work_location** | [**LocationResponse**](LocationResponse.md) |  | 
 **manager** | [**EmployeeResponseManager**](EmployeeResponseManager.md) |  | 
 **bank_account** | [**CreateEmployeeRequestBankAccount**](CreateEmployeeRequestBankAccount.md) |  | 
-**employments** | [**[EmploymentResponse], none_type**](EmploymentResponse.md) |  | 
+**employment_history** | [**[EmploymentHistoryResponse], none_type**](EmploymentHistoryResponse.md) |  | 
+**compensation_history** | [**[CompensationHistoryResponse], none_type**](CompensationHistoryResponse.md) |  | 
 **custom_fields** | **{str: (bool, date, datetime, dict, float, int, list, str, none_type)}, none_type** |  | 
 **groups** | [**Groups20230301Response**](Groups20230301Response.md) |  | 
 **dependents** | [**[CreateEmployeeRequestDependents], none_type**](CreateEmployeeRequestDependents.md) |  | 

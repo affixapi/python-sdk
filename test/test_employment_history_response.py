@@ -13,31 +13,11 @@ import sys
 import unittest
 
 import openapi_client
-from openapi_client.model.address_response import AddressResponse
-from openapi_client.model.compensation_history_response import CompensationHistoryResponse
-from openapi_client.model.create_employee_request_bank_account import CreateEmployeeRequestBankAccount
-from openapi_client.model.create_employee_request_dependents import CreateEmployeeRequestDependents
-from openapi_client.model.create_employee_request_emergency_contacts import CreateEmployeeRequestEmergencyContacts
-from openapi_client.model.employee_response_manager import EmployeeResponseManager
 from openapi_client.model.employment_history_response import EmploymentHistoryResponse
-from openapi_client.model.employment_status_response import EmploymentStatusResponse
-from openapi_client.model.groups20230301_response import Groups20230301Response
-from openapi_client.model.location_response import LocationResponse
-globals()['AddressResponse'] = AddressResponse
-globals()['CompensationHistoryResponse'] = CompensationHistoryResponse
-globals()['CreateEmployeeRequestBankAccount'] = CreateEmployeeRequestBankAccount
-globals()['CreateEmployeeRequestDependents'] = CreateEmployeeRequestDependents
-globals()['CreateEmployeeRequestEmergencyContacts'] = CreateEmployeeRequestEmergencyContacts
-globals()['EmployeeResponseManager'] = EmployeeResponseManager
-globals()['EmploymentHistoryResponse'] = EmploymentHistoryResponse
-globals()['EmploymentStatusResponse'] = EmploymentStatusResponse
-globals()['Groups20230301Response'] = Groups20230301Response
-globals()['LocationResponse'] = LocationResponse
-from openapi_client.model.employee_response import EmployeeResponse
 
 
-class TestEmployeeResponse(unittest.TestCase):
-    """EmployeeResponse unit test stubs"""
+class TestEmploymentHistoryResponse(unittest.TestCase):
+    """EmploymentHistoryResponse unit test stubs"""
 
     def setUp(self):
         pass
@@ -45,10 +25,10 @@ class TestEmployeeResponse(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def testEmployeeResponse(self):
-        """Test EmployeeResponse"""
+    def testEmploymentHistoryResponse(self):
+        """Test EmploymentHistoryResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = EmployeeResponse()  # noqa: E501
+        # model = EmploymentHistoryResponse()  # noqa: E501
         pass
 
 

@@ -29,20 +29,22 @@ from openapi_client.model_utils import (  # noqa: F401
 
 def lazy_import():
     from openapi_client.model.address_response import AddressResponse
+    from openapi_client.model.compensation_history_response import CompensationHistoryResponse
     from openapi_client.model.create_employee_request_bank_account import CreateEmployeeRequestBankAccount
     from openapi_client.model.create_employee_request_dependents import CreateEmployeeRequestDependents
     from openapi_client.model.create_employee_request_emergency_contacts import CreateEmployeeRequestEmergencyContacts
     from openapi_client.model.employee_response_manager import EmployeeResponseManager
-    from openapi_client.model.employment_response import EmploymentResponse
+    from openapi_client.model.employment_history_response import EmploymentHistoryResponse
     from openapi_client.model.employment_status_response import EmploymentStatusResponse
     from openapi_client.model.groups20230301_response import Groups20230301Response
     from openapi_client.model.location_response import LocationResponse
     globals()['AddressResponse'] = AddressResponse
+    globals()['CompensationHistoryResponse'] = CompensationHistoryResponse
     globals()['CreateEmployeeRequestBankAccount'] = CreateEmployeeRequestBankAccount
     globals()['CreateEmployeeRequestDependents'] = CreateEmployeeRequestDependents
     globals()['CreateEmployeeRequestEmergencyContacts'] = CreateEmployeeRequestEmergencyContacts
     globals()['EmployeeResponseManager'] = EmployeeResponseManager
-    globals()['EmploymentResponse'] = EmploymentResponse
+    globals()['EmploymentHistoryResponse'] = EmploymentHistoryResponse
     globals()['EmploymentStatusResponse'] = EmploymentStatusResponse
     globals()['Groups20230301Response'] = Groups20230301Response
     globals()['LocationResponse'] = LocationResponse
@@ -154,7 +156,8 @@ class EmployeeResponse(ModelNormal):
             'work_location': (LocationResponse,),  # noqa: E501
             'manager': (EmployeeResponseManager,),  # noqa: E501
             'bank_account': (CreateEmployeeRequestBankAccount,),  # noqa: E501
-            'employments': ([EmploymentResponse], none_type,),  # noqa: E501
+            'employment_history': ([EmploymentHistoryResponse], none_type,),  # noqa: E501
+            'compensation_history': ([CompensationHistoryResponse], none_type,),  # noqa: E501
             'custom_fields': ({str: (bool, date, datetime, dict, float, int, list, str, none_type)}, none_type,),  # noqa: E501
             'groups': (Groups20230301Response,),  # noqa: E501
             'dependents': ([CreateEmployeeRequestDependents], none_type,),  # noqa: E501
@@ -193,7 +196,8 @@ class EmployeeResponse(ModelNormal):
         'work_location': 'work_location',  # noqa: E501
         'manager': 'manager',  # noqa: E501
         'bank_account': 'bank_account',  # noqa: E501
-        'employments': 'employments',  # noqa: E501
+        'employment_history': 'employment_history',  # noqa: E501
+        'compensation_history': 'compensation_history',  # noqa: E501
         'custom_fields': 'custom_fields',  # noqa: E501
         'groups': 'groups',  # noqa: E501
         'dependents': 'dependents',  # noqa: E501
@@ -212,7 +216,7 @@ class EmployeeResponse(ModelNormal):
     ])
 
     @convert_js_args_to_python_args
-    def __init__(self, id, remote_id, employee_number, first_name, last_name, display_full_name, nationality, job_title, work_email, personal_email, mobile_phone_number, tax_id, gender, ethnicity, marital_status, date_of_birth, employment_status, employment_type, start_date, remote_created_at, termination_date, avatar, home_location, work_location, manager, bank_account, employments, custom_fields, groups, dependents, emergency_contacts, *args, **kwargs):  # noqa: E501
+    def __init__(self, id, remote_id, employee_number, first_name, last_name, display_full_name, nationality, job_title, work_email, personal_email, mobile_phone_number, tax_id, gender, ethnicity, marital_status, date_of_birth, employment_status, employment_type, start_date, remote_created_at, termination_date, avatar, home_location, work_location, manager, bank_account, employment_history, compensation_history, custom_fields, groups, dependents, emergency_contacts, *args, **kwargs):  # noqa: E501
         """EmployeeResponse - a model defined in OpenAPI
 
         Args:
@@ -242,7 +246,8 @@ class EmployeeResponse(ModelNormal):
             work_location (LocationResponse):
             manager (EmployeeResponseManager):
             bank_account (CreateEmployeeRequestBankAccount):
-            employments ([EmploymentResponse], none_type):
+            employment_history ([EmploymentHistoryResponse], none_type):
+            compensation_history ([CompensationHistoryResponse], none_type):
             custom_fields ({str: (bool, date, datetime, dict, float, int, list, str, none_type)}, none_type):
             groups (Groups20230301Response):
             dependents ([CreateEmployeeRequestDependents], none_type):
@@ -330,7 +335,8 @@ class EmployeeResponse(ModelNormal):
         self.work_location = work_location
         self.manager = manager
         self.bank_account = bank_account
-        self.employments = employments
+        self.employment_history = employment_history
+        self.compensation_history = compensation_history
         self.custom_fields = custom_fields
         self.groups = groups
         self.dependents = dependents
