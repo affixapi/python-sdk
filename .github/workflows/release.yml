@@ -17,7 +17,7 @@ permissions:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    timeout-minutes: 2
+    timeout-minutes: 5
     environment:
       name: pypi
       url: https://pypi.org/p/affixapi
@@ -34,9 +34,10 @@ jobs:
           python3 -m pip install --upgrade build
           python3 -m build
 
+        # wait upto 90s
       - name: pause to avoid 2ndary rate limits # https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api?apiVersion=2022-11-28#about-secondary-rate-limits
         run: |
-          sleep "$(echo $RANDOM % 20 + 1 | bc)"
+          sleep "$(echo $RANDOM % 90 + 1 | bc)"
 
       - uses: cycjimmy/semantic-release-action@v4.0.0
         with:

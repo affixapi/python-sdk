@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 **employment_type** | **str, none_type** |  | 
 **currency** | [**CurrencyResponse**](CurrencyResponse.md) |  | 
 **effective_date** | **date, none_type** |  | 
+**notes** | **str, none_type** |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

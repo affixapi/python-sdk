@@ -98,6 +98,7 @@ class CompensationHistoryNoNonNullRequest(ModelNormal):
             'employment_type': (str,),  # noqa: E501
             'currency': (CurrencyNotNullRequest,),  # noqa: E501
             'effective_date': (date,),  # noqa: E501
+            'notes': (str,),  # noqa: E501
         }
 
     @cached_property
@@ -112,6 +113,7 @@ class CompensationHistoryNoNonNullRequest(ModelNormal):
         'employment_type': 'employment_type',  # noqa: E501
         'currency': 'currency',  # noqa: E501
         'effective_date': 'effective_date',  # noqa: E501
+        'notes': 'notes',  # noqa: E501
     }
 
     _composed_schemas = {}
@@ -126,7 +128,7 @@ class CompensationHistoryNoNonNullRequest(ModelNormal):
     ])
 
     @convert_js_args_to_python_args
-    def __init__(self, pay_rate, pay_period, pay_frequency, employment_type, currency, effective_date, *args, **kwargs):  # noqa: E501
+    def __init__(self, pay_rate, pay_period, pay_frequency, employment_type, currency, effective_date, notes, *args, **kwargs):  # noqa: E501
         """CompensationHistoryNoNonNullRequest - a model defined in OpenAPI
 
         Args:
@@ -136,6 +138,7 @@ class CompensationHistoryNoNonNullRequest(ModelNormal):
             employment_type (str):
             currency (CurrencyNotNullRequest):
             effective_date (date):
+            notes (str):
 
         Keyword Args:
             _check_type (bool): if True, values for parameters in openapi_types
@@ -199,6 +202,7 @@ class CompensationHistoryNoNonNullRequest(ModelNormal):
         self.employment_type = employment_type
         self.currency = currency
         self.effective_date = effective_date
+        self.notes = notes
         for var_name, var_value in kwargs.items():
             if var_name not in self.attribute_map and \
                         self._configuration is not None and \

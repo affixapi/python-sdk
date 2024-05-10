@@ -78,6 +78,8 @@ class EmploymentHistoryResponse(ModelNormal):
             'group_id': (str, none_type,),  # noqa: E501
             'group_remote_id': (str, none_type,),  # noqa: E501
             'group_name': (str, none_type,),  # noqa: E501
+            'manager_id': (str, none_type,),  # noqa: E501
+            'manager_remote_id': (str, none_type,),  # noqa: E501
         }
 
     @cached_property
@@ -91,6 +93,8 @@ class EmploymentHistoryResponse(ModelNormal):
         'group_id': 'group_id',  # noqa: E501
         'group_remote_id': 'group_remote_id',  # noqa: E501
         'group_name': 'group_name',  # noqa: E501
+        'manager_id': 'manager_id',  # noqa: E501
+        'manager_remote_id': 'manager_remote_id',  # noqa: E501
     }
 
     _composed_schemas = {}
@@ -105,7 +109,7 @@ class EmploymentHistoryResponse(ModelNormal):
     ])
 
     @convert_js_args_to_python_args
-    def __init__(self, job_title, effective_date, group_id, group_remote_id, group_name, *args, **kwargs):  # noqa: E501
+    def __init__(self, job_title, effective_date, group_id, group_remote_id, group_name, manager_id, manager_remote_id, *args, **kwargs):  # noqa: E501
         """EmploymentHistoryResponse - a model defined in OpenAPI
 
         Args:
@@ -114,6 +118,8 @@ class EmploymentHistoryResponse(ModelNormal):
             group_id (str, none_type):
             group_remote_id (str, none_type):
             group_name (str, none_type):
+            manager_id (str, none_type):
+            manager_remote_id (str, none_type):
 
         Keyword Args:
             _check_type (bool): if True, values for parameters in openapi_types
@@ -176,6 +182,8 @@ class EmploymentHistoryResponse(ModelNormal):
         self.group_id = group_id
         self.group_remote_id = group_remote_id
         self.group_name = group_name
+        self.manager_id = manager_id
+        self.manager_remote_id = manager_remote_id
         for var_name, var_value in kwargs.items():
             if var_name not in self.attribute_map and \
                         self._configuration is not None and \
