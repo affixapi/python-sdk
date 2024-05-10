@@ -13,8 +13,8 @@ import sys
 import unittest
 
 import openapi_client
-from openapi_client.model.currency_request import CurrencyRequest
-globals()['CurrencyRequest'] = CurrencyRequest
+from openapi_client.model.currency_not_null_request import CurrencyNotNullRequest
+globals()['CurrencyNotNullRequest'] = CurrencyNotNullRequest
 from openapi_client.model.compensation_history_no_non_null_request import CompensationHistoryNoNonNullRequest
 
 

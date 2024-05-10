@@ -350,7 +350,7 @@ Class | Method | HTTP request | Description
  - [CreateEmployeeRequestDependents](docs/CreateEmployeeRequestDependents.md)
  - [CreateEmployeeRequestEmergencyContacts](docs/CreateEmployeeRequestEmergencyContacts.md)
  - [CreateEmployeeRequestManager](docs/CreateEmployeeRequestManager.md)
- - [CurrencyRequest](docs/CurrencyRequest.md)
+ - [CurrencyNotNullRequest](docs/CurrencyNotNullRequest.md)
  - [CurrencyResponse](docs/CurrencyResponse.md)
  - [DisconnectResponse](docs/DisconnectResponse.md)
  - [EmployeeResponse](docs/EmployeeResponse.md)
