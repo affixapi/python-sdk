@@ -58,6 +58,7 @@ class CompensationHistoryNoNonNullRequest(ModelNormal):
 
     allowed_values = {
         ('pay_frequency',): {
+            'YEAR': "year",
             'WEEKLY': "weekly",
             'BIWEEKLY': "biweekly",
             'SEMIMONTHLY': "semimonthly",
