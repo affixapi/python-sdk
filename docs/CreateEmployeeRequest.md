@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 **tax_id** | **str, none_type** |  | [optional] 
 **gender** | **str, none_type** |  | [optional] 
 **ethnicity** | **str, none_type** |  | [optional] 
-**marital_status** | **str, none_type** |  | [optional] 
+**marital_status** | **str, none_type** | &#x60;other&#x60; option can include co-habitating, civil partnership, separated, widowed, etc  | [optional] 
 **date_of_birth** | **date, none_type** |  | [optional] 
 **employment_status** | [**EmploymentStatusNotNullRequest**](EmploymentStatusNotNullRequest.md) |  | [optional] 
 **employment_type** | **str, none_type** |  | [optional] 

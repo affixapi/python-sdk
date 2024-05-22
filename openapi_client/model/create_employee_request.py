@@ -95,7 +95,9 @@ class CreateEmployeeRequest(ModelNormal):
             'None': None,
             'SINGLE': "single",
             'MARRIED': "married",
+            'DIVORCED': "divorced",
             'NOT_SPECIFIED': "not_specified",
+            'OTHER': "other",
         },
         ('employment_type',): {
             'None': None,
@@ -253,7 +255,7 @@ class CreateEmployeeRequest(ModelNormal):
             tax_id (str, none_type): [optional]  # noqa: E501
             gender (str, none_type): [optional]  # noqa: E501
             ethnicity (str, none_type): [optional]  # noqa: E501
-            marital_status (str, none_type): [optional]  # noqa: E501
+            marital_status (str, none_type): `other` option can include co-habitating, civil partnership, separated, widowed, etc . [optional]  # noqa: E501
             date_of_birth (date, none_type): [optional]  # noqa: E501
             employment_status (EmploymentStatusNotNullRequest): [optional]  # noqa: E501
             employment_type (str, none_type): [optional]  # noqa: E501

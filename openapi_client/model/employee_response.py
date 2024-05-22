@@ -97,6 +97,7 @@ class EmployeeResponse(ModelNormal):
             'None': None,
             'SINGLE': "single",
             'MARRIED': "married",
+            'DIVORCED': "divorced",
             'NOT_SPECIFIED': "not_specified",
             'OTHER': "other",
             'NULL': "null",
@@ -234,7 +235,7 @@ class EmployeeResponse(ModelNormal):
             tax_id (str, none_type):
             gender (str, none_type):
             ethnicity (str, none_type):
-            marital_status (str, none_type): `other` option can include co-habitating, civil partnership, separated, divorced, widowed, etc 
+            marital_status (str, none_type): `other` option can include co-habitating, civil partnership, separated, widowed, etc 
             date_of_birth (date, none_type):
             employment_status (EmploymentStatusResponse):
             employment_type (str, none_type):
