@@ -94,15 +94,15 @@ class PayslipResponse(ModelNormal):
             'employee_id': (str,),  # noqa: E501
             'payrun_id': (str,),  # noqa: E501
             'currency': (str,),  # noqa: E501
-            'gross_pay': (float,),  # noqa: E501
-            'net_pay': (float,),  # noqa: E501
+            'gross_pay': (float, none_type,),  # noqa: E501
+            'net_pay': (float, none_type,),  # noqa: E501
             'start_date': (date,),  # noqa: E501
             'end_date': (date,),  # noqa: E501
             'payment_date': (date,),  # noqa: E501
-            'earnings': ([PayslipResponseEarnings],),  # noqa: E501
+            'earnings': ([PayslipResponseEarnings], none_type,),  # noqa: E501
             'contributions': ([PayslipResponseContributions], none_type,),  # noqa: E501
-            'deductions': ([PayslipResponseDeductions],),  # noqa: E501
-            'taxes': ([PayslipResponseTaxes],),  # noqa: E501
+            'deductions': ([PayslipResponseDeductions], none_type,),  # noqa: E501
+            'taxes': ([PayslipResponseTaxes], none_type,),  # noqa: E501
         }
 
     @cached_property
@@ -148,15 +148,15 @@ class PayslipResponse(ModelNormal):
             employee_id (str):
             payrun_id (str):
             currency (str):
-            gross_pay (float): if USD/EUR/GBP, in cent
-            net_pay (float): if USD/EUR/GBP, in cent
+            gross_pay (float, none_type): if USD/EUR/GBP, in cent
+            net_pay (float, none_type): if USD/EUR/GBP, in cent
             start_date (date):
             end_date (date):
             payment_date (date):
-            earnings ([PayslipResponseEarnings]):
+            earnings ([PayslipResponseEarnings], none_type):
             contributions ([PayslipResponseContributions], none_type): Items paid by the employer that are not included in gross pay, such as employer-paid portion of private health insurance 
-            deductions ([PayslipResponseDeductions]):
-            taxes ([PayslipResponseTaxes]):
+            deductions ([PayslipResponseDeductions], none_type):
+            taxes ([PayslipResponseTaxes], none_type):
 
         Keyword Args:
             _check_type (bool): if True, values for parameters in openapi_types
