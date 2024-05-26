@@ -8,7 +8,7 @@ long_description = (this_directory / "README.md").read_text()
 from setuptools import setup, find_packages  # noqa: H301
 
 NAME = "affixapi"
-VERSION = "1.1.78"
+VERSION = "1.1.79"
 
 # To install the library, run the following
 #

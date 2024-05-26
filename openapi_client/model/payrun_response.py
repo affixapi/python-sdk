@@ -54,12 +54,18 @@ class PayrunResponse(ModelNormal):
 
     allowed_values = {
         ('run_state',): {
+            'None': None,
             'PAID': "paid",
             'PENDING': "pending",
+            'NULL': "null",
         },
         ('run_type',): {
             'None': None,
             'REGULAR': "regular",
+            'ONE-TIME': "one-time",
+            'OFF-CYCLE': "off-cycle",
+            'CORRECTION': "correction",
+            'REVERSAL': "reversal",
             'NULL': "null",
         },
     }
@@ -84,7 +90,7 @@ class PayrunResponse(ModelNormal):
         return {
             'id': (str,),  # noqa: E501
             'remote_id': (str,),  # noqa: E501
-            'run_state': (str,),  # noqa: E501
+            'run_state': (str, none_type,),  # noqa: E501
             'run_type': (str, none_type,),  # noqa: E501
             'start_date': (date, none_type,),  # noqa: E501
             'end_date': (date, none_type,),  # noqa: E501
@@ -124,7 +130,7 @@ class PayrunResponse(ModelNormal):
         Args:
             id (str): The Affix-assigned id of the individual
             remote_id (str): the remote system-assigned id of the payrun
-            run_state (str):
+            run_state (str, none_type):
             run_type (str, none_type):
             start_date (date, none_type): Payrun period start date
             end_date (date, none_type): Payrun period end date

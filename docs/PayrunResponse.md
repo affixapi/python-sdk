@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **str** | The Affix-assigned id of the individual | 
 **remote_id** | **str** | the remote system-assigned id of the payrun | 
-**run_state** | **str** |  | 
+**run_state** | **str, none_type** |  | 
 **run_type** | **str, none_type** |  | 
 **start_date** | **date, none_type** | Payrun period start date | 
 **end_date** | **date, none_type** | Payrun period end date | 
