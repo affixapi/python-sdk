@@ -28,10 +28,14 @@ from openapi_client.model_utils import (  # noqa: F401
 )
 
 def lazy_import():
+    from openapi_client.model.currency_not_null_response import CurrencyNotNullResponse
+    from openapi_client.model.payrun_type_response import PayrunTypeResponse
     from openapi_client.model.payslip_response_contributions import PayslipResponseContributions
     from openapi_client.model.payslip_response_deductions import PayslipResponseDeductions
     from openapi_client.model.payslip_response_earnings import PayslipResponseEarnings
     from openapi_client.model.payslip_response_taxes import PayslipResponseTaxes
+    globals()['CurrencyNotNullResponse'] = CurrencyNotNullResponse
+    globals()['PayrunTypeResponse'] = PayrunTypeResponse
     globals()['PayslipResponseContributions'] = PayslipResponseContributions
     globals()['PayslipResponseDeductions'] = PayslipResponseDeductions
     globals()['PayslipResponseEarnings'] = PayslipResponseEarnings
@@ -63,11 +67,6 @@ class PayslipResponse(ModelNormal):
     """
 
     allowed_values = {
-        ('currency',): {
-            'USD': "usd",
-            'EUR': "eur",
-            'GBP': "gbp",
-        },
     }
 
     validations = {
@@ -89,11 +88,14 @@ class PayslipResponse(ModelNormal):
         """
         lazy_import()
         return {
-            'id': (str,),  # noqa: E501
-            'remote_id': (str,),  # noqa: E501
+            'id': (str, none_type,),  # noqa: E501
+            'remote_id': (str, none_type,),  # noqa: E501
             'employee_id': (str,),  # noqa: E501
+            'employee_remote_id': (str,),  # noqa: E501
             'payrun_id': (str,),  # noqa: E501
-            'currency': (str,),  # noqa: E501
+            'payrun_remote_id': (str,),  # noqa: E501
+            'payrun_type': (PayrunTypeResponse,),  # noqa: E501
+            'currency': (CurrencyNotNullResponse,),  # noqa: E501
             'gross_pay': (float, none_type,),  # noqa: E501
             'net_pay': (float, none_type,),  # noqa: E501
             'start_date': (date,),  # noqa: E501
@@ -114,7 +116,10 @@ class PayslipResponse(ModelNormal):
         'id': 'id',  # noqa: E501
         'remote_id': 'remote_id',  # noqa: E501
         'employee_id': 'employee_id',  # noqa: E501
+        'employee_remote_id': 'employee_remote_id',  # noqa: E501
         'payrun_id': 'payrun_id',  # noqa: E501
+        'payrun_remote_id': 'payrun_remote_id',  # noqa: E501
+        'payrun_type': 'payrun_type',  # noqa: E501
         'currency': 'currency',  # noqa: E501
         'gross_pay': 'gross_pay',  # noqa: E501
         'net_pay': 'net_pay',  # noqa: E501
@@ -139,15 +144,18 @@ class PayslipResponse(ModelNormal):
     ])
 
     @convert_js_args_to_python_args
-    def __init__(self, id, remote_id, employee_id, payrun_id, currency, gross_pay, net_pay, start_date, end_date, payment_date, earnings, contributions, deductions, taxes, *args, **kwargs):  # noqa: E501
+    def __init__(self, id, remote_id, employee_id, employee_remote_id, payrun_id, payrun_remote_id, payrun_type, currency, gross_pay, net_pay, start_date, end_date, payment_date, earnings, contributions, deductions, taxes, *args, **kwargs):  # noqa: E501
         """PayslipResponse - a model defined in OpenAPI
 
         Args:
-            id (str): The Affix-assigned id of the payslip
-            remote_id (str): the remote system-assigned id of the payrun
+            id (str, none_type): The Affix-assigned id of the payslip
+            remote_id (str, none_type): the remote system-assigned id of the payrun
             employee_id (str):
+            employee_remote_id (str):
             payrun_id (str):
-            currency (str):
+            payrun_remote_id (str):
+            payrun_type (PayrunTypeResponse):
+            currency (CurrencyNotNullResponse):
             gross_pay (float, none_type): if USD/EUR/GBP, in cent
             net_pay (float, none_type): if USD/EUR/GBP, in cent
             start_date (date):
@@ -217,7 +225,10 @@ class PayslipResponse(ModelNormal):
         self.id = id
         self.remote_id = remote_id
         self.employee_id = employee_id
+        self.employee_remote_id = employee_remote_id
         self.payrun_id = payrun_id
+        self.payrun_remote_id = payrun_remote_id
+        self.payrun_type = payrun_type
         self.currency = currency
         self.gross_pay = gross_pay
         self.net_pay = net_pay

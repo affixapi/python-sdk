@@ -19,6 +19,7 @@ docs/CreateEmployeeRequestDependents.md
 docs/CreateEmployeeRequestEmergencyContacts.md
 docs/CreateEmployeeRequestManager.md
 docs/CurrencyNotNullRequest.md
+docs/CurrencyNotNullResponse.md
 docs/CurrencyResponse.md
 docs/DisconnectResponse.md
 docs/EmployeeResponse.md
@@ -46,6 +47,7 @@ docs/MessageResponse.md
 docs/ModeRequest.md
 docs/ModeResponse.md
 docs/PayrunResponse.md
+docs/PayrunTypeResponse.md
 docs/Payruns20230301Response.md
 docs/PayslipResponse.md
 docs/PayslipResponseContributions.md
@@ -96,6 +98,7 @@ openapi_client/model/create_employee_request_dependents.py
 openapi_client/model/create_employee_request_emergency_contacts.py
 openapi_client/model/create_employee_request_manager.py
 openapi_client/model/currency_not_null_request.py
+openapi_client/model/currency_not_null_response.py
 openapi_client/model/currency_response.py
 openapi_client/model/disconnect_response.py
 openapi_client/model/employee_response.py
@@ -122,6 +125,7 @@ openapi_client/model/message_response.py
 openapi_client/model/mode_request.py
 openapi_client/model/mode_response.py
 openapi_client/model/payrun_response.py
+openapi_client/model/payrun_type_response.py
 openapi_client/model/payruns20230301_response.py
 openapi_client/model/payslip_response.py
 openapi_client/model/payslip_response_contributions.py
@@ -169,6 +173,7 @@ test/test_create_employee_request_dependents.py
 test/test_create_employee_request_emergency_contacts.py
 test/test_create_employee_request_manager.py
 test/test_currency_not_null_request.py
+test/test_currency_not_null_response.py
 test/test_currency_response.py
 test/test_disconnect_response.py
 test/test_employee_response.py
@@ -196,6 +201,7 @@ test/test_message_response.py
 test/test_mode_request.py
 test/test_mode_response.py
 test/test_payrun_response.py
+test/test_payrun_type_response.py
 test/test_payruns20230301_response.py
 test/test_payslip_response.py
 test/test_payslip_response_contributions.py

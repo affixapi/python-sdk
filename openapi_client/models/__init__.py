@@ -23,6 +23,7 @@ from openapi_client.model.create_employee_request_dependents import CreateEmploy
 from openapi_client.model.create_employee_request_emergency_contacts import CreateEmployeeRequestEmergencyContacts
 from openapi_client.model.create_employee_request_manager import CreateEmployeeRequestManager
 from openapi_client.model.currency_not_null_request import CurrencyNotNullRequest
+from openapi_client.model.currency_not_null_response import CurrencyNotNullResponse
 from openapi_client.model.currency_response import CurrencyResponse
 from openapi_client.model.disconnect_response import DisconnectResponse
 from openapi_client.model.employee_response import EmployeeResponse
@@ -49,6 +50,7 @@ from openapi_client.model.message_response import MessageResponse
 from openapi_client.model.mode_request import ModeRequest
 from openapi_client.model.mode_response import ModeResponse
 from openapi_client.model.payrun_response import PayrunResponse
+from openapi_client.model.payrun_type_response import PayrunTypeResponse
 from openapi_client.model.payruns20230301_response import Payruns20230301Response
 from openapi_client.model.payslip_response import PayslipResponse
 from openapi_client.model.payslip_response_contributions import PayslipResponseContributions

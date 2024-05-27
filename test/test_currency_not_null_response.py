@@ -13,13 +13,11 @@ import sys
 import unittest
 
 import openapi_client
-from openapi_client.model.payrun_type_response import PayrunTypeResponse
-globals()['PayrunTypeResponse'] = PayrunTypeResponse
-from openapi_client.model.payrun_response import PayrunResponse
+from openapi_client.model.currency_not_null_response import CurrencyNotNullResponse
 
 
-class TestPayrunResponse(unittest.TestCase):
-    """PayrunResponse unit test stubs"""
+class TestCurrencyNotNullResponse(unittest.TestCase):
+    """CurrencyNotNullResponse unit test stubs"""
 
     def setUp(self):
         pass
@@ -27,10 +25,10 @@ class TestPayrunResponse(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def testPayrunResponse(self):
-        """Test PayrunResponse"""
+    def testCurrencyNotNullResponse(self):
+        """Test CurrencyNotNullResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = PayrunResponse()  # noqa: E501
+        # model = CurrencyNotNullResponse()  # noqa: E501
         pass
 
 

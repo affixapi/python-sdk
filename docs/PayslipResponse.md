@@ -4,11 +4,14 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** | The Affix-assigned id of the payslip | 
-**remote_id** | **str** | the remote system-assigned id of the payrun | 
+**id** | **str, none_type** | The Affix-assigned id of the payslip | 
+**remote_id** | **str, none_type** | the remote system-assigned id of the payrun | 
 **employee_id** | **str** |  | 
+**employee_remote_id** | **str** |  | 
 **payrun_id** | **str** |  | 
-**currency** | **str** |  | 
+**payrun_remote_id** | **str** |  | 
+**payrun_type** | [**PayrunTypeResponse**](PayrunTypeResponse.md) |  | 
+**currency** | [**CurrencyNotNullResponse**](CurrencyNotNullResponse.md) |  | 
 **gross_pay** | **float, none_type** | if USD/EUR/GBP, in cent | 
 **net_pay** | **float, none_type** | if USD/EUR/GBP, in cent | 
 **start_date** | **date** |  | 

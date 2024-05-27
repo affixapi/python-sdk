@@ -13,10 +13,14 @@ import sys
 import unittest
 
 import openapi_client
+from openapi_client.model.currency_not_null_response import CurrencyNotNullResponse
+from openapi_client.model.payrun_type_response import PayrunTypeResponse
 from openapi_client.model.payslip_response_contributions import PayslipResponseContributions
 from openapi_client.model.payslip_response_deductions import PayslipResponseDeductions
 from openapi_client.model.payslip_response_earnings import PayslipResponseEarnings
 from openapi_client.model.payslip_response_taxes import PayslipResponseTaxes
+globals()['CurrencyNotNullResponse'] = CurrencyNotNullResponse
+globals()['PayrunTypeResponse'] = PayrunTypeResponse
 globals()['PayslipResponseContributions'] = PayslipResponseContributions
 globals()['PayslipResponseDeductions'] = PayslipResponseDeductions
 globals()['PayslipResponseEarnings'] = PayslipResponseEarnings
