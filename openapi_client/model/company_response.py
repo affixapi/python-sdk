@@ -78,8 +78,8 @@ class CompanyResponse(ModelNormal):
         """
         lazy_import()
         return {
-            'id': (str,),  # noqa: E501
-            'remote_id': (str,),  # noqa: E501
+            'id': (str, none_type,),  # noqa: E501
+            'remote_id': (str, none_type,),  # noqa: E501
             'legal_name': (str, none_type,),  # noqa: E501
             'display_name': (str, none_type,),  # noqa: E501
             'tax_id': (str, none_type,),  # noqa: E501
@@ -116,8 +116,8 @@ class CompanyResponse(ModelNormal):
         """CompanyResponse - a model defined in OpenAPI
 
         Args:
-            id (str): The Affix-assigned id of the abscence
-            remote_id (str): the remote system-assigned id of the abscence
+            id (str, none_type): The Affix-assigned id of the abscence
+            remote_id (str, none_type): the remote system-assigned id of the abscence
             legal_name (str, none_type):
             display_name (str, none_type):
             tax_id (str, none_type):

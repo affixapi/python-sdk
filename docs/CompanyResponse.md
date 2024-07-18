@@ -4,8 +4,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** | The Affix-assigned id of the abscence | 
-**remote_id** | **str** | the remote system-assigned id of the abscence | 
+**id** | **str, none_type** | The Affix-assigned id of the abscence | 
+**remote_id** | **str, none_type** | the remote system-assigned id of the abscence | 
 **legal_name** | **str, none_type** |  | 
 **display_name** | **str, none_type** |  | 
 **tax_id** | **str, none_type** |  | 
