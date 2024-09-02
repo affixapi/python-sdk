@@ -21,6 +21,7 @@ Name | Type | Description | Notes
 **contributions** | [**[PayslipResponseContributions], none_type**](PayslipResponseContributions.md) | Items paid by the employer that are not included in gross pay, such as employer-paid portion of private health insurance  | 
 **deductions** | [**[PayslipResponseDeductions], none_type**](PayslipResponseDeductions.md) |  | 
 **taxes** | [**[PayslipResponseTaxes], none_type**](PayslipResponseTaxes.md) |  | 
+**reimbursements** | [**[PayslipResponseReimbursements], none_type**](PayslipResponseReimbursements.md) |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

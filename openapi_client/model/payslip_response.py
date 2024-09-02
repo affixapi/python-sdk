@@ -33,12 +33,14 @@ def lazy_import():
     from openapi_client.model.payslip_response_contributions import PayslipResponseContributions
     from openapi_client.model.payslip_response_deductions import PayslipResponseDeductions
     from openapi_client.model.payslip_response_earnings import PayslipResponseEarnings
+    from openapi_client.model.payslip_response_reimbursements import PayslipResponseReimbursements
     from openapi_client.model.payslip_response_taxes import PayslipResponseTaxes
     globals()['CurrencyNotNullResponse'] = CurrencyNotNullResponse
     globals()['PayrunTypeResponse'] = PayrunTypeResponse
     globals()['PayslipResponseContributions'] = PayslipResponseContributions
     globals()['PayslipResponseDeductions'] = PayslipResponseDeductions
     globals()['PayslipResponseEarnings'] = PayslipResponseEarnings
+    globals()['PayslipResponseReimbursements'] = PayslipResponseReimbursements
     globals()['PayslipResponseTaxes'] = PayslipResponseTaxes
 
 
@@ -105,6 +107,7 @@ class PayslipResponse(ModelNormal):
             'contributions': ([PayslipResponseContributions], none_type,),  # noqa: E501
             'deductions': ([PayslipResponseDeductions], none_type,),  # noqa: E501
             'taxes': ([PayslipResponseTaxes], none_type,),  # noqa: E501
+            'reimbursements': ([PayslipResponseReimbursements], none_type,),  # noqa: E501
         }
 
     @cached_property
@@ -130,6 +133,7 @@ class PayslipResponse(ModelNormal):
         'contributions': 'contributions',  # noqa: E501
         'deductions': 'deductions',  # noqa: E501
         'taxes': 'taxes',  # noqa: E501
+        'reimbursements': 'reimbursements',  # noqa: E501
     }
 
     _composed_schemas = {}
@@ -144,7 +148,7 @@ class PayslipResponse(ModelNormal):
     ])
 
     @convert_js_args_to_python_args
-    def __init__(self, id, remote_id, employee_id, employee_remote_id, payrun_id, payrun_remote_id, payrun_type, currency, gross_pay, net_pay, start_date, end_date, payment_date, earnings, contributions, deductions, taxes, *args, **kwargs):  # noqa: E501
+    def __init__(self, id, remote_id, employee_id, employee_remote_id, payrun_id, payrun_remote_id, payrun_type, currency, gross_pay, net_pay, start_date, end_date, payment_date, earnings, contributions, deductions, taxes, reimbursements, *args, **kwargs):  # noqa: E501
         """PayslipResponse - a model defined in OpenAPI
 
         Args:
@@ -165,6 +169,7 @@ class PayslipResponse(ModelNormal):
             contributions ([PayslipResponseContributions], none_type): Items paid by the employer that are not included in gross pay, such as employer-paid portion of private health insurance 
             deductions ([PayslipResponseDeductions], none_type):
             taxes ([PayslipResponseTaxes], none_type):
+            reimbursements ([PayslipResponseReimbursements], none_type):
 
         Keyword Args:
             _check_type (bool): if True, values for parameters in openapi_types
@@ -239,6 +244,7 @@ class PayslipResponse(ModelNormal):
         self.contributions = contributions
         self.deductions = deductions
         self.taxes = taxes
+        self.reimbursements = reimbursements
         for var_name, var_value in kwargs.items():
             if var_name not in self.attribute_map and \
                         self._configuration is not None and \

@@ -13,25 +13,11 @@ import sys
 import unittest
 
 import openapi_client
-from openapi_client.model.currency_not_null_response import CurrencyNotNullResponse
-from openapi_client.model.payrun_type_response import PayrunTypeResponse
-from openapi_client.model.payslip_response_contributions import PayslipResponseContributions
-from openapi_client.model.payslip_response_deductions import PayslipResponseDeductions
-from openapi_client.model.payslip_response_earnings import PayslipResponseEarnings
 from openapi_client.model.payslip_response_reimbursements import PayslipResponseReimbursements
-from openapi_client.model.payslip_response_taxes import PayslipResponseTaxes
-globals()['CurrencyNotNullResponse'] = CurrencyNotNullResponse
-globals()['PayrunTypeResponse'] = PayrunTypeResponse
-globals()['PayslipResponseContributions'] = PayslipResponseContributions
-globals()['PayslipResponseDeductions'] = PayslipResponseDeductions
-globals()['PayslipResponseEarnings'] = PayslipResponseEarnings
-globals()['PayslipResponseReimbursements'] = PayslipResponseReimbursements
-globals()['PayslipResponseTaxes'] = PayslipResponseTaxes
-from openapi_client.model.payslip_response import PayslipResponse
 
 
-class TestPayslipResponse(unittest.TestCase):
-    """PayslipResponse unit test stubs"""
+class TestPayslipResponseReimbursements(unittest.TestCase):
+    """PayslipResponseReimbursements unit test stubs"""
 
     def setUp(self):
         pass
@@ -39,10 +25,10 @@ class TestPayslipResponse(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def testPayslipResponse(self):
-        """Test PayslipResponse"""
+    def testPayslipResponseReimbursements(self):
+        """Test PayslipResponseReimbursements"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = PayslipResponse()  # noqa: E501
+        # model = PayslipResponseReimbursements()  # noqa: E501
         pass
 
 

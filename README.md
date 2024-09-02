@@ -384,6 +384,7 @@ Class | Method | HTTP request | Description
  - [PayslipResponseContributions](docs/PayslipResponseContributions.md)
  - [PayslipResponseDeductions](docs/PayslipResponseDeductions.md)
  - [PayslipResponseEarnings](docs/PayslipResponseEarnings.md)
+ - [PayslipResponseReimbursements](docs/PayslipResponseReimbursements.md)
  - [PayslipResponseTaxes](docs/PayslipResponseTaxes.md)
  - [Payslips20230301Response](docs/Payslips20230301Response.md)
  - [PolicyTypeResponse](docs/PolicyTypeResponse.md)
