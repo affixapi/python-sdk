@@ -91,6 +91,7 @@ class AddressNoNonNullRequest(ModelNormal):
             'NL': "NL",
             'NO': "NO",
             'PL': "PL",
+            'PT': "PT",
             'RO': "RO",
             'RU': "RU",
             'SE': "SE",
